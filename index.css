@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration: none;
+}
+.row {
+  margin: auto 0 !important;
+}
+html {
+  font-size: 10px;
+}
+.section {
+  padding: 0 !important;
+  width: 100%;
+}
+.section .scrolled {
+  z-index: 100;
+  position: fixed;
+  width: 100vw ;
+  background-color: #ffffff;
+  border-bottom: 1px solid #666;
+  color: #000;
+  height: 6rem;
+  line-height: 6rem;
+}
+.section .scrolled .blog {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+.section .scrolled .blog a {
+  color: #000;
+  font-weight: 600;
+}
+.section .scrolled .blog a:hover {
+  text-decoration: none;
+  color: yellowgreen ;
+}
+.section .scrolled .detail {
+  font-weight: 300;
+}
+.section .scrolled .detail div {
+  display: flex;
+}
+.section .scrolled .detail div div {
+  font-size: 1.5rem;
+}
+.section .scrolled .detail div div a {
+  color: #000;
+  font-weight: 600;
+}
+.section .scrolled .detail div div a:hover {
+  text-decoration: none;
+  color: yellowgreen ;
+}
+.section .scrolled .detail div span {
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 6rem;
+}
+.section .header {
+  z-index: 100;
+  position: fixed;
+  width: 100vw ;
+  background-color: transparent;
+  color: #fff;
+  height: 6rem;
+  line-height: 6rem;
+}
+.section .header .blog {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+.section .header .blog a {
+  color: #fff;
+  font-weight: 600;
+}
+.section .header .blog a:hover {
+  text-decoration: none;
+  color: yellowgreen !important;
+}
+.section .header .detail {
+  font-weight: 300;
+}
+.section .header .detail div {
+  display: flex;
+}
+.section .header .detail div div {
+  font-size: 1.5rem;
+}
+.section .header .detail div div a {
+  color: #fff !important;
+  font-weight: 600;
+}
+.section .header .detail div div a:hover {
+  text-decoration: none;
+  color: yellowgreen !important;
+}
+.section .header .detail div span {
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 6rem;
+}
+.section .content1 {
+  background-color: #000;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 !important;
+}
+.section .content1 img {
+  width: 100%;
+  filter: blur(0.1rem);
+}
+.section .list {
+  margin-left: 4rem;
+  visibility: hidden;
+  position: absolute;
+  margin-top: 6rem;
+  width: 100%;
+}
+.section .list div {
+  height: 3rem;
+  width: 100%;
+  line-height: 3rem;
+}
+.section .list div a {
+  padding-left: 4rem;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.8);
+  height: 3rem;
+}
+.section .list div a:hover {
+  padding-left: 4rem;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+.section #works {
+  margin: 0 auto;
+  padding-top: 6rem;
+  width: 100%;
+}
+.section #works {
+  padding-top: 6rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.section #works .haha {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section #works .haha .item {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  width: 80%;
+  text-align: center;
+  padding: 1rem 0;
+}
+.section #works .haha .item:hover {
+  box-shadow: 0 0 1rem -0.2rem black;
+}
+.section #works .haha .item img {
+  border-radius: 0.5rem;
+  width: 50%;
+}
+.section #works .haha .item .title {
+  margin-top: 1rem;
+  color: black;
+}
+.section #skills {
+  padding-top: 6rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.section #skills .haha {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section #skills .haha .item {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  width: 80%;
+  text-align: center;
+  padding: 1rem 0;
+}
+.section #skills .haha .item:hover {
+  box-shadow: 0 0 1rem -0.2rem black;
+}
+.section #skills .haha .item img {
+  border-radius: 0.5rem;
+  width: 50%;
+}
+.section #skills .haha .item .title {
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 1rem;
+  color: black;
+}
+.section #contact {
+  width: 100%;
+  background-color: #f00;
+  text-align: center;
+}
+.progress {
+  height: 0.8rem;
+  border: 1px solid #ccc;
+}
+.progress .progress-bar-warning {
+  border-radius: 0.4rem;
+  height: 0.8rem;
+  font-size: 0.8rem;
+  height: 100%;
+}
+.r {
+  background: linear-gradient(45deg, #3366FF, #FF33CC);
+}
+.y {
+  background: linear-gradient(45deg, #FFCC33, #33FFCC);
+}
+.b {
+  background: linear-gradient(45deg, #3D00F5, #F53D00);
+}
