@@ -1,33 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
-
 #!/usr/bin/env sh
 
 # abort on errors
@@ -50,6 +20,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:code1992-clown/web-blog.git master:gh-pages
+git push -f https://github.com/code1992-clown/blog.git master:gh-pages
 
 cd -
