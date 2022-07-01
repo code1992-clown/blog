@@ -10,6 +10,8 @@ export default {
                 text: '技术栈',
                 items: [
                     { text: 'markDown', link: '/views/tech/markDown/index' },
+                    { text: 'typeScript', link: '/views/tech/typeScript/index' },
+                    { text: 'js使用技巧', link: '/views/tech/js/index' },
                     { text: 'webpack', link: '/views/tech/webpack/index' },
                     { text: 'node', link: '/views/tech/node/index' },
                 ]
@@ -36,7 +38,7 @@ export default {
                   ]
                 }
               ],
-              '/views/tech/node':[
+            '/views/tech/node':[
                 {
                   text: '基础',
                   collapsible: true,
@@ -55,7 +57,31 @@ export default {
                     { text: 'Item D', link: '/item-d' },
                   ]
                 }
-              ]
+            ],
+            '/views/tech/typeScript':[
+                {
+                  text: '基础',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    { text: '基础', link: '/views/tech/typeScript/basic' },
+                    { text: '进阶', link: '/views/tech/typeScript/advance' },
+                    // { text: '面试', link: '/views/tech/typeScript/face' },
+                  ]
+                },
+            ],
+            '/views/tech/js':[
+              {
+                text: 'js使用技巧',
+                collapsible: true,
+                collapsed: true,
+                items: [
+                  { text: '解构赋值', link: '/views/tech/js/destructur' },
+                  { text: '其他', link: '/views/tech/js/advance' },
+                  // { text: '面试', link: '/views/tech/typeScript/face' },
+                ]
+              },
+          ]
         },
         socialLinks: [ // 往外跳转
             // { icon: 'github', link: 'https://github.com/code1992-clown' }

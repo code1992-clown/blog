@@ -45,9 +45,9 @@ Markdown是一种**轻量级标记语言**，排版语法简洁，让人们更�
 
 ## 使用示例
 * ###  标题语法{#head}
-```
-# Heading 1 (vitepress 默认h1有分割线)
-## Heading 2 (vitepress 有默认链接id)
+```javascript
+// # Heading 1 (vitepress 默认h1有分割线)
+// ## Heading 2 (vitepress 有默认链接id)
 ### Heading 3
 #### Heading 4
 ##### Heading 5
@@ -60,7 +60,7 @@ Markdown是一种**轻量级标记语言**，排版语法简洁，让人们更�
 ###### Heading 6
 
 * ###  段落语法{#para}
-```
+```javascript
 I really like using Markdown.
 
 I think I'll use it to format all of my documents from now on.
@@ -70,7 +70,7 @@ I really like using Markdown.
 I think I'll use it to format all of my documents from now on.
 
 * ###  换行语法{#change}
-```
+```javascript
 This is the first line.  
 And this is the second line.
 ```
@@ -78,33 +78,33 @@ This is the first line.
 And this is the second line.
 
 * ###  加粗语法{#bold}
-```
+```javascript
 I just love **bold text**.
 ```
 I just love **bold text**.
 
 * ###  倾斜语法{#italic}
-```
+```javascript
 I just love *bold text*.
 ```
 I just love *bold text*.
 
 * ###  倾斜加粗语法{#italicandbold}
-```
+```javascript
 I just love ***bold text***.
 ```
 I just love ***bold text***.
 
 * ###  引用语法{#import}
-```
+```javascript
 > #### 你好
 >> - 世界
-```
+``` 
 > ### 你好
 >> - 世界
 
 * ### 无序列表语法{#ol}
-```
+```javascript
 + 你好
 - 世界是
 * 哈哈哈
@@ -115,7 +115,7 @@ I just love ***bold text***.
 
 
 * ###  有序列表语法{#ul}
-```
+```javascript
 1. hello
     1. 你好
 2. world
@@ -125,7 +125,7 @@ I just love ***bold text***.
 2. world
 
 * ###  代码语法{#ul}
-```
+```javascript
     <html>
       <head>
       </head>
@@ -133,7 +133,7 @@ I just love ***bold text***.
 ```
 
 * ###  分割语法{#split}
-```
+```javascript
    ***
    ______
    ---
@@ -143,7 +143,7 @@ I just love ***bold text***.
    ---
 
 * ###  链接语法{#link}
-```
+```javascript
 这是一个链接 [Markdown语法](https://markdown.com.cn "最好的markdown教程")。
 <https://markdown.com.cn>
 I love supporting the **[EFF](https://eff.org)**.
@@ -154,7 +154,7 @@ I love supporting the **[EFF](https://eff.org)**.
 I love supporting the **[EFF](https://eff.org)**.
 
 * ###  图片语法{#img}
-```
+```javascript
 ![你好,世界](imgs/test.jpeg)  
 [![沙漠中的岩石图片](imgs/test.jpeg "Shiprock")](https://markdown.com.cn)
 
@@ -232,9 +232,3 @@ Second Term
 
 ## 结束语
 以上就是markDown的基本用法，大家加油！😀😀😀😀😀😀
-
-
-
-
-
-
