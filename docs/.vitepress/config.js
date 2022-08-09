@@ -6,15 +6,27 @@ export default {
         logo: '/ava.jpeg',
         nav: [ // 导航栏
             { text: '摘要', link: '/' },
+            { text: "Linux", link: '/views/servers/linux' },
+            { text: 'Nginx', link: '/views/servers/nginx' },
+            { text: '网络', link: '/views/servers/net' },
+            { text: '手写实现', link: '/views/servers/write' },
+            { text: 'normal', link: '/views/servers/normal' },
+            { text: 'Git', link: '/views/servers/git' },
+            {
+              text: '自动化构建',
+              items: [
+                  { text: 'markDown', link: '/views/flow/cicd' },
+              ]
+            },
             {
                 text: '技术栈',
                 items: [
-                    { text: 'markDown', link: '/views/tech/markDown/index' },
-                    { text: 'typeScript', link: '/views/tech/typeScript/index' },
-                    { text: 'js使用技巧', link: '/views/tech/js/index' },
-                    { text: 'webpack', link: '/views/tech/webpack/index' },
-                    { text: 'node', link: '/views/tech/node/index' },
-                ]
+                        { text: 'markDown', link: '/views/tech/markDown/index' },
+                        { text: 'typeScript', link: '/views/tech/typeScript/index' },
+                        { text: 'js使用技巧', link: '/views/tech/js/index' },
+                        { text: 'webpack', link: '/views/tech/webpack/index' },
+                        { text: 'node', link: '/views/tech/node/index' },
+                      ]
             },
         ],
         sidebar: {
@@ -77,7 +89,7 @@ export default {
                 collapsed: true,
                 items: [
                   { text: '解构赋值', link: '/views/tech/js/destructur' },
-                  { text: '其他', link: '/views/tech/js/advance' },
+                  { text: '位运算', link: '/views/tech/js/bit' },
                   // { text: '面试', link: '/views/tech/typeScript/face' },
                 ]
               },
