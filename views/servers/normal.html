@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>js基础 | VitePress</title>
+    <meta name="description" content="陈振方的博客">
+    <link rel="stylesheet" href="/blog/assets/style.a499e6a7.css">
+    <link rel="modulepreload" href="/blog/assets/app.8bb00f2e.js">
+    <link rel="modulepreload" href="/blog/assets/views_servers_normal.md.93de3405.lean.js">
+    
+    <script>(()=>{const e=localStorage.getItem("vitepress-theme-appearance"),a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-6b5fd0a9><!--[--><!--]--><!--[--><span tabindex="-1" data-v-45f6ae50></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-45f6ae50> Skip to content </a><!--]--><!----><header class="VPNav no-sidebar" data-v-6b5fd0a9 data-v-0e356168><div class="VPNavBar" data-v-0e356168 data-v-8856f192><div class="container" data-v-8856f192><div class="VPNavBarTitle" data-v-8856f192 data-v-6a6f7ff6><a class="title" href="/blog/" data-v-6a6f7ff6><!--[--><img class="VPImage logo" src="/blog/ava.jpeg" data-v-73ae1788><!--]--><!--[-->| BLOG<!--]--></a></div><div class="content" data-v-8856f192><!----><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-8856f192 data-v-a30758ee><span id="main-nav-aria-label" class="visually-hidden" data-v-a30758ee>Main Navigation</span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/blog/" data-v-a30758ee data-v-8fba5fa8 data-v-5704c677><!--[-->摘要<!--]--><!----></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/blog/views/servers/linux.html" data-v-a30758ee data-v-8fba5fa8 data-v-5704c677><!--[-->Linux<!--]--><!----></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/blog/views/servers/nginx.html" data-v-a30758ee data-v-8fba5fa8 data-v-5704c677><!--[-->Nginx<!--]--><!----></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/blog/views/servers/net.html" data-v-a30758ee data-v-8fba5fa8 data-v-5704c677><!--[-->网络<!--]--><!----></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/blog/views/servers/write.html" data-v-a30758ee data-v-8fba5fa8 data-v-5704c677><!--[-->手写实现<!--]--><!----></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink active" href="/blog/views/servers/normal.html" data-v-a30758ee data-v-8fba5fa8 data-v-5704c677><!--[-->normal<!--]--><!----></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/blog/views/servers/git.html" data-v-a30758ee data-v-8fba5fa8 data-v-5704c677><!--[-->Git<!--]--><!----></a><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup" data-v-a30758ee data-v-8dccea88><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-8dccea88><span class="text" data-v-8dccea88><!----> 自动化构建 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="text-icon" data-v-8dccea88><path d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"></path></svg></span></button><div class="menu" data-v-8dccea88><div class="VPMenu" data-v-8dccea88 data-v-e73581a2><div class="items" data-v-e73581a2><!--[--><!--[--><div class="VPMenuLink" data-v-e73581a2 data-v-06b18c43><a class="VPLink link" href="/blog/views/flow/cicd.html" data-v-06b18c43 data-v-5704c677><!--[-->markDown<!--]--><!----></a></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup" data-v-a30758ee data-v-8dccea88><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-8dccea88><span class="text" data-v-8dccea88><!----> 技术栈 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="text-icon" data-v-8dccea88><path d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"></path></svg></span></button><div class="menu" data-v-8dccea88><div class="VPMenu" data-v-8dccea88 data-v-e73581a2><div class="items" data-v-e73581a2><!--[--><!--[--><div class="VPMenuLink" data-v-e73581a2 data-v-06b18c43><a class="VPLink link" href="/blog/views/tech/markDown/index.html" data-v-06b18c43 data-v-5704c677><!--[-->markDown<!--]--><!----></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e73581a2 data-v-06b18c43><a class="VPLink link" href="/blog/views/tech/typeScript/index.html" data-v-06b18c43 data-v-5704c677><!--[-->typeScript<!--]--><!----></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e73581a2 data-v-06b18c43><a class="VPLink link" href="/blog/views/tech/js/index.html" data-v-06b18c43 data-v-5704c677><!--[-->js使用技巧<!--]--><!----></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e73581a2 data-v-06b18c43><a class="VPLink link" href="/blog/views/tech/webpack/index.html" data-v-06b18c43 data-v-5704c677><!--[-->webpack<!--]--><!----></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e73581a2 data-v-06b18c43><a class="VPLink link" href="/blog/views/tech/node/index.html" data-v-06b18c43 data-v-5704c677><!--[-->node<!--]--><!----></a></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-8856f192 data-v-311055f2><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" aria-label="toggle dark mode" data-v-311055f2 data-v-781f9d1b data-v-1dda4c9c><span class="check" data-v-1dda4c9c><span class="icon" data-v-1dda4c9c><!--[--><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="sun" data-v-781f9d1b><path d="M12,18c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S15.3,18,12,18zM12,8c-2.2,0-4,1.8-4,4c0,2.2,1.8,4,4,4c2.2,0,4-1.8,4-4C16,9.8,14.2,8,12,8z"></path><path d="M12,4c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,3.6,12.6,4,12,4z"></path><path d="M12,24c-0.6,0-1-0.4-1-1v-2c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,23.6,12.6,24,12,24z"></path><path d="M5.6,6.6c-0.3,0-0.5-0.1-0.7-0.3L3.5,4.9c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C6.2,6.5,5.9,6.6,5.6,6.6z"></path><path d="M19.8,20.8c-0.3,0-0.5-0.1-0.7-0.3l-1.4-1.4c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C20.3,20.7,20,20.8,19.8,20.8z"></path><path d="M3,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S3.6,13,3,13z"></path><path d="M23,13h-2c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path><path d="M4.2,20.8c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C4.7,20.7,4.5,20.8,4.2,20.8z"></path><path d="M18.4,6.6c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C18.9,6.5,18.6,6.6,18.4,6.6z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="moon" data-v-781f9d1b><path d="M12.1,22c-0.3,0-0.6,0-0.9,0c-5.5-0.5-9.5-5.4-9-10.9c0.4-4.8,4.2-8.6,9-9c0.4,0,0.8,0.2,1,0.5c0.2,0.3,0.2,0.8-0.1,1.1c-2,2.7-1.4,6.4,1.3,8.4c2.1,1.6,5,1.6,7.1,0c0.3-0.2,0.7-0.3,1.1-0.1c0.3,0.2,0.5,0.6,0.5,1c-0.2,2.7-1.5,5.1-3.6,6.8C16.6,21.2,14.4,22,12.1,22zM9.3,4.4c-2.9,1-5,3.6-5.2,6.8c-0.4,4.4,2.8,8.3,7.2,8.7c2.1,0.2,4.2-0.4,5.8-1.8c1.1-0.9,1.9-2.1,2.4-3.4c-2.5,0.9-5.3,0.5-7.5-1.1C9.2,11.4,8.1,7.7,9.3,4.4z"></path></svg><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-8856f192 data-v-0ae890f7 data-v-4dcbaf3a><!--[--><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-8856f192 data-v-0562f5c0 data-v-8dccea88><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-8dccea88><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="icon" data-v-8dccea88><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></svg></button><div class="menu" data-v-8dccea88><div class="VPMenu" data-v-8dccea88 data-v-e73581a2><!----><!--[--><!--[--><!----><div class="group" data-v-0562f5c0><div class="item appearance" data-v-0562f5c0><p class="label" data-v-0562f5c0>Appearance</p><div class="appearance-action" data-v-0562f5c0><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" aria-label="toggle dark mode" data-v-0562f5c0 data-v-781f9d1b data-v-1dda4c9c><span class="check" data-v-1dda4c9c><span class="icon" data-v-1dda4c9c><!--[--><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="sun" data-v-781f9d1b><path d="M12,18c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S15.3,18,12,18zM12,8c-2.2,0-4,1.8-4,4c0,2.2,1.8,4,4,4c2.2,0,4-1.8,4-4C16,9.8,14.2,8,12,8z"></path><path d="M12,4c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,3.6,12.6,4,12,4z"></path><path d="M12,24c-0.6,0-1-0.4-1-1v-2c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,23.6,12.6,24,12,24z"></path><path d="M5.6,6.6c-0.3,0-0.5-0.1-0.7-0.3L3.5,4.9c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C6.2,6.5,5.9,6.6,5.6,6.6z"></path><path d="M19.8,20.8c-0.3,0-0.5-0.1-0.7-0.3l-1.4-1.4c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C20.3,20.7,20,20.8,19.8,20.8z"></path><path d="M3,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S3.6,13,3,13z"></path><path d="M23,13h-2c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path><path d="M4.2,20.8c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C4.7,20.7,4.5,20.8,4.2,20.8z"></path><path d="M18.4,6.6c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C18.9,6.5,18.6,6.6,18.4,6.6z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="moon" data-v-781f9d1b><path d="M12.1,22c-0.3,0-0.6,0-0.9,0c-5.5-0.5-9.5-5.4-9-10.9c0.4-4.8,4.2-8.6,9-9c0.4,0,0.8,0.2,1,0.5c0.2,0.3,0.2,0.8-0.1,1.1c-2,2.7-1.4,6.4,1.3,8.4c2.1,1.6,5,1.6,7.1,0c0.3-0.2,0.7-0.3,1.1-0.1c0.3,0.2,0.5,0.6,0.5,1c-0.2,2.7-1.5,5.1-3.6,6.8C16.6,21.2,14.4,22,12.1,22zM9.3,4.4c-2.9,1-5,3.6-5.2,6.8c-0.4,4.4,2.8,8.3,7.2,8.7c2.1,0.2,4.2-0.4,5.8-1.8c1.1-0.9,1.9-2.1,2.4-3.4c-2.5,0.9-5.3,0.5-7.5-1.1C9.2,11.4,8.1,7.7,9.3,4.4z"></path></svg><!--]--></span></span></button></div></div></div><div class="group" data-v-0562f5c0><div class="item social-links" data-v-0562f5c0><div class="VPSocialLinks social-links-list" data-v-0562f5c0 data-v-4dcbaf3a><!--[--><!--]--></div></div></div><!--]--><!--]--></div></div></div><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-8856f192 data-v-6f008456><span class="container" data-v-6f008456><span class="top" data-v-6f008456></span><span class="middle" data-v-6f008456></span><span class="bottom" data-v-6f008456></span></span></button></div></div></div><!----></header><!----><!----><div class="VPContent" id="VPContent" data-v-6b5fd0a9 data-v-a4c57a06><div class="VPDoc" data-v-a4c57a06 data-v-79ca2460><div class="container" data-v-79ca2460><div class="aside" data-v-79ca2460><div class="aside-curtain" data-v-79ca2460></div><div class="aside-container" data-v-79ca2460><div class="aside-content" data-v-79ca2460><div class="VPDocAside" data-v-79ca2460 data-v-779d834d><!--[--><!--]--><!--[--><!--]--><div class="VPDocAsideOutline has-outline" data-v-779d834d data-v-51e5a8ce><div class="content" data-v-51e5a8ce><div class="outline-marker" data-v-51e5a8ce></div><div class="outline-title" data-v-51e5a8ce>On this page</div><nav aria-labelledby="doc-outline-aria-label" data-v-51e5a8ce><span class="visually-hidden" id="doc-outline-aria-label" data-v-51e5a8ce> Table of Contents for current page </span><ul class="root" data-v-51e5a8ce><!--[--><li style="" data-v-51e5a8ce><a class="outline-link" href="#js基础" data-v-51e5a8ce>js基础</a><!----></li><li style="" data-v-51e5a8ce><a class="outline-link" href="#js技巧" data-v-51e5a8ce>js技巧</a><!----></li><li style="" data-v-51e5a8ce><a class="outline-link" href="#css技巧" data-v-51e5a8ce>css技巧</a><!----></li><li style="" data-v-51e5a8ce><a class="outline-link" href="#杂谈" data-v-51e5a8ce>杂谈</a><!----></li><!--]--></ul></nav></div></div><!--[--><!--]--><div class="spacer" data-v-779d834d></div><!--[--><!--]--><div class="VPDocAsideCarbonAds" data-v-779d834d><!----></div><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-79ca2460><div class="content-container" data-v-79ca2460><!--[--><!--]--><main class="main" data-v-79ca2460><div style="position:relative;" class="vp-doc _blog_views_servers_normal" data-v-79ca2460><div><h2 id="js基础" tabindex="-1">js基础 <a class="header-anchor" href="#js基础" aria-hidden="true">#</a></h2><ul><li>变量声明和变量赋值</li></ul><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#C792EA;">let</span><span style="color:#A6ACCD;"> a </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">b </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">2</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// 命名多个</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(a</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">b)</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// 1 2</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 1. 动态语言：根据值来识别变量的数据类型，弱类型语言</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 2. 静态语言： 编译型语言，强类型语言</span></span>
+<span class="line"></span></code></pre></div><ul><li>数据类型</li></ul><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#676E95;font-style:italic;">//原始值， 基本数据类型： Number String Boolean null undefined Symbol Bigint</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//引用值，Object,Array,Function,Date,RegExp 等</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre></div><ul><li>栈内存(Stack)，堆内存(Heap)</li></ul><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#F78C6C;">1.</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">栈内存</span><span style="color:#A6ACCD;">(Stack): 不会跟着值的改变而改变，修改的话，又开辟了一个新的空间，原来的空间会保留，将来要占用的话，需要进行覆盖；</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#F78C6C;">2.</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">堆内存</span><span style="color:#A6ACCD;">(Heap)</span><span style="color:#89DDFF;">:</span><span style="color:#A6ACCD;"> </span><span style="color:#FFCB6B;">引用类型的指针存在栈内存</span><span style="color:#A6ACCD;">，</span><span style="color:#FFCB6B;">指针指向堆内存</span><span style="color:#A6ACCD;">，</span><span style="color:#FFCB6B;">进行赋值的时候</span><span style="color:#A6ACCD;">，</span><span style="color:#FFCB6B;">会指向同一个指针</span><span style="color:#C792EA;">=&gt;</span><span style="color:#A6ACCD;">同一块堆内存空间</span></span>
+<span class="line"></span></code></pre></div><ul><li>错误</li></ul><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#676E95;font-style:italic;">// 语法错误： 代码一行都不会执行</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 通用错误： 会中断执行，之前执行，后面不执行</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 脚本块与脚本块错误不相互影响</span></span>
+<span class="line"></span></code></pre></div><ul><li>判断数据类型</li></ul><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">    console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">typeof</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">124</span><span style="color:#A6ACCD;">) </span><span style="color:#676E95;font-style:italic;">// 这个方法很独特，需要研究研究</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// null: 历史遗留问题，开始之初是表示空对象(空指针)，2015，提议改成null类型，ECMA拒绝(代码兼容问题),是个bug</span></span>
+<span class="line"></span></code></pre></div><ul><li>运算符 <ol><li>加法: 基本数据类型 +string = string</li><li>除法：0/0, NaN(not a number),类型为number; 1/0,Infinity,number类型</li><li>取余： %</li></ol><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#C792EA;">let</span><span style="color:#A6ACCD;"> a </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">;</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(a</span><span style="color:#89DDFF;">++</span><span style="color:#A6ACCD;">)</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// 先打印后运算 ++ 优先级感觉比赋值运算符还低</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(a) </span><span style="color:#676E95;font-style:italic;">//2</span></span>
+<span class="line"></span></code></pre></div><ol start="4"><li>比较运算符,字符串会比较ASCII码</li><li>NaN 与任何值都不相等</li></ol></li><li>循环</li></ul><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> i </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">0</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// for 循环和 while循环 可以相互转换</span></span>
+<span class="line"><span style="color:#89DDFF;font-style:italic;">for</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;"> i </span><span style="color:#89DDFF;">&lt;</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">5</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;"> )</span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">i</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">++</span><span style="color:#A6ACCD;">i</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#89DDFF;font-style:italic;">while</span><span style="color:#A6ACCD;">(i</span><span style="color:#89DDFF;">&lt;</span><span style="color:#F78C6C;">10</span><span style="color:#A6ACCD;">)</span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">i</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">++</span><span style="color:#A6ACCD;">i</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// break: 中止循环，让循环中止等价功能是限制循环条件</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// continue: 跳过循环条件</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 小案例</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> i </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">10</span><span style="color:#89DDFF;">;</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#89DDFF;font-style:italic;">for</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;">i</span><span style="color:#89DDFF;">--;</span><span style="color:#A6ACCD;">)</span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">i</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// n次方</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> n </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">5</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> num </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">1</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#89DDFF;font-style:italic;">for</span><span style="color:#A6ACCD;">(</span><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> i </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;">i</span><span style="color:#89DDFF;">&lt;=</span><span style="color:#A6ACCD;">n</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;">i</span><span style="color:#89DDFF;">++</span><span style="color:#A6ACCD;">)</span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#A6ACCD;">num</span><span style="color:#89DDFF;">*=</span><span style="color:#F78C6C;">10</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">//10的n次幂</span></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// num*=i // 阶乘</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;">    console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(num)</span></span>
+<span class="line"></span></code></pre></div><ul><li><p>类型转换</p><ol><li>显式类型转换</li></ol><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#676E95;font-style:italic;">// Number: 转数字 “sdfas”=&gt;NaN, true=&gt;1,false=&gt;0,null=&gt;0,undefined=&gt;NaN</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#FFCB6B;">Number</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">1ss</span><span style="color:#89DDFF;">&#39;</span><span style="color:#A6ACCD;">)) </span><span style="color:#676E95;font-style:italic;">// NaN</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#FFCB6B;">Number</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">1</span><span style="color:#89DDFF;">&#39;</span><span style="color:#A6ACCD;">)) </span><span style="color:#676E95;font-style:italic;">// 1</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#82AAFF;">parseInt</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">10</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,</span><span style="color:#F78C6C;">16</span><span style="color:#A6ACCD;">)) </span><span style="color:#676E95;font-style:italic;">// 16</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#82AAFF;">parseInt</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">10</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,</span><span style="color:#F78C6C;">0</span><span style="color:#A6ACCD;">)) </span><span style="color:#676E95;font-style:italic;">// 10</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#82AAFF;">parseInt</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">10</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,</span><span style="color:#F78C6C;">1</span><span style="color:#A6ACCD;">)) </span><span style="color:#676E95;font-style:italic;">// NaN</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#82AAFF;">parseInt</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">10</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,</span><span style="color:#F78C6C;">2</span><span style="color:#A6ACCD;">)) </span><span style="color:#676E95;font-style:italic;">// 2</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#82AAFF;">parseInt</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">a</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,</span><span style="color:#F78C6C;">16</span><span style="color:#A6ACCD;">)) </span><span style="color:#676E95;font-style:italic;">// 10</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#82AAFF;">parseInt</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">a123</span><span style="color:#89DDFF;">&#39;</span><span style="color:#A6ACCD;">)) </span><span style="color:#676E95;font-style:italic;">// NaN</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#82AAFF;">parseInt</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">23a</span><span style="color:#89DDFF;">&#39;</span><span style="color:#A6ACCD;">)) </span><span style="color:#676E95;font-style:italic;">// 23</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">+</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">12</span><span style="color:#89DDFF;">&#39;</span><span style="color:#A6ACCD;">) </span><span style="color:#676E95;font-style:italic;">//转数字</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// String: 转字符串  null和undefined没有toString方法，toString有个方法，进制</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// Boolean: 转布尔值</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre></div><ol start="2"><li>隐式类型转换</li></ol><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">null</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">==</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">0</span><span style="color:#A6ACCD;">)</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// false</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">undefined</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">==</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">0</span><span style="color:#A6ACCD;">)</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// false </span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">undefined</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">==</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">null</span><span style="color:#A6ACCD;">) </span><span style="color:#676E95;font-style:italic;">// true</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 全局的isNaN,会进行隐式类型转换=&gt;Number</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#82AAFF;">isNaN</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">12</span><span style="color:#89DDFF;">&#39;</span><span style="color:#A6ACCD;">))</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log({}==!{})</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log([]==![])</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 1. 原始值=&gt;原始值</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// Number()</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Number(undefined)) // NaN</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Number(null)) // 0    null空指针，对象类型</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// Boolean()</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Boolean(undefined)) // false</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Boolean(null)) // false</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Boolean(Infinity)) // true</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// falsey(虚值)： null ,undefined,0(+0,-0),NaN,false,&#39;&#39; 6个或者7个，只有这几个都是true</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(typeof Infinity) // number 无穷大</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Number(Infinity)); // Infinity</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 2. 对象=&gt;原始值</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 布尔值</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Boolean([])) // true </span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Boolean(Symbol())) // true </span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Boolean(new Error())) // true </span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Boolean({})) // true </span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(typeof Symbol()) // symbol</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(typeof 1n) // bigint</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(typeof function(){}) // function</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(typeof Date); // function</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(typeof Date()); // string </span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(typeof new Date()); // Object</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 数字类型</span></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> obj </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">{</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// 1. 调用valueOf，如果是原始值，返回原始值，否则走toString,如果是原始值，返回，否则继续沿着原型链网上找</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#F07178;">toString</span><span style="color:#89DDFF;">(){</span><span style="color:#F07178;"> </span></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// return [] // 这个会报错，不能重写</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#89DDFF;font-style:italic;">return</span><span style="color:#F07178;"> </span><span style="color:#F78C6C;">44</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">//44</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">},</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#F07178;">valueOf</span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// return 2 // console.log(Number(obj)) // 2</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#89DDFF;font-style:italic;">return</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">{}</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">// console.log(Number(obj)) // NaN</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Object.prototype.toString.call({}),&#39;ss&#39;)</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Number(obj)) </span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 1. valueOf ,值是原始值，Number包装以后返回</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 2. 不是原始值， toString() 是原始值，Number包装以后返回</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 1. toString 返回不是原始值，报错</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#FFCB6B;">Number</span><span style="color:#A6ACCD;">([</span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">,</span><span style="color:#F78C6C;">2</span><span style="color:#89DDFF;">,</span><span style="color:#F78C6C;">3</span><span style="color:#A6ACCD;">])) </span><span style="color:#676E95;font-style:italic;">// NaN</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#FFCB6B;">Number</span><span style="color:#A6ACCD;">([</span><span style="color:#F78C6C;">10</span><span style="color:#A6ACCD;">])) </span><span style="color:#676E95;font-style:italic;">// 10</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#FFCB6B;">Number</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">{}</span><span style="color:#A6ACCD;">)) </span><span style="color:#676E95;font-style:italic;">// NaN</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// null undefined 没有相对应的包装类</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(null.toString()) // 报错</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log((12).toString()) // 12</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// String 等价于 “” + xxxx</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// var test1 = {</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     toString(){</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//         return 1</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     },</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     valueOf(){</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//         return 33</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     }</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(&#39;&#39;+{}) // [object Object]</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(String(test1)) // 寻找的顺序是Number相反，先走toString,然后走valueOf,其他完全一样</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// function fn(){}</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(String(fn)) // function fn(){}</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(fn.toString()) // function fn(){}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Number(023)) // 八进制 19</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Number(&#39;124&#39;)) // 124</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Number(&#39;    124&#39;)) // 124</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Number(&#39;.124&#39;)) // 0.124</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Number(&#39;abc124&#39;)) // NaN</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Number(&#39; 2 4&#39;)) // NaN</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// parseInt parseFloat 进制的范围0--36</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(parseInt(&#39;11&#39;,0)) // 0 是按照十进制处理的</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(parseInt(&#39;1&#39;,1)) // 1 NaN</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(parseInt(&#39;11&#39;,2)) // 3</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(parseInt(&#39;11&#39;,3)) // 4</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(parseInt(&#39;11&#39;,3)) // 4</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(parseInt(&#39;11&#39;,undefined)) // 11 进制不存在按照默认十进制</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(parseInt(&#39;11&#39;,&#39;&#39;))// 11 进制不存在按照默认十进制</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(parseInt(&#39;11&#39;,false))// 11 进制不存在按照默认十进制</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 隐式类型转换涉及布尔转换</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// if while switch &amp;&amp; || ! !! for(;;) ?:</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 数字转换</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// + - * / % ~~ &lt;&lt; &gt;&gt; &amp; | ^</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// == !== &gt; &lt; &gt;= &lt;=</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 记住转Number</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 原始值</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(true == 1) // true</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(&#39;1&#39; == true) // true</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(&#39;1&#39; == 1) // true</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(undefined == true) // false </span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(null == 0) // false</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(null == 1) // false </span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(NaN == NaN) // false </span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(null == undefined) //true</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 引用值</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log([1]==1) // true</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log([&#39;1&#39;]==true) // true</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log([]==false) // true</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">([]</span><span style="color:#89DDFF;">==!</span><span style="color:#A6ACCD;">[]) </span><span style="color:#676E95;font-style:italic;">//  0 == 0</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">{}=={}</span><span style="color:#A6ACCD;">)  </span><span style="color:#676E95;font-style:italic;">//Nan == NaN</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 1. 类型相同不用隐式类型转换</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 2. 特例： undefined == null 只有这一个 和规则不符</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//          NaN 与任何值都不想等</span></span>
+<span class="line"></span></code></pre></div></li><li><p>函数</p><ol><li>函数式编程</li><li>高内聚，低耦合 ---&gt; 模块的单一职责</li><li>解耦合 ----&gt; 用函数可以很好的解耦合</li><li>函数最基本的写法 -----&gt; 函数声明</li></ol><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">test</span><span style="color:#89DDFF;">(){}</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// 函数声明</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// var fn = function(){} // 表达式 字面量的方式</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> fn </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#C792EA;">function</span><span style="color:#89DDFF;">(){}</span><span style="color:#676E95;font-style:italic;">// 匿名函数表达式 函数字面量</span></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> fn1 </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">fnnn</span><span style="color:#89DDFF;">(){</span><span style="color:#F07178;">  </span><span style="color:#676E95;font-style:italic;">// fnnn外部不可见，会被忽略，递归可以用到，</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(fn</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">name) </span><span style="color:#676E95;font-style:italic;">// fn</span></span>
+<span class="line"></span></code></pre></div><ol start="5"><li>命名规则: 小驼峰命名</li><li>形参和实参数</li></ol><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">test</span><span style="color:#89DDFF;">(</span><span style="color:#A6ACCD;">a</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">b</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">c</span><span style="color:#89DDFF;">){</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">arguments</span><span style="color:#F07178;">) </span><span style="color:#676E95;font-style:italic;">// 获取实参</span></span>
+<span class="line"><span style="color:#89DDFF;font-style:italic;">for</span><span style="color:#F07178;">(</span><span style="color:#C792EA;">var</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">i</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">=</span><span style="color:#F07178;"> </span><span style="color:#F78C6C;">0</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;">i</span><span style="color:#89DDFF;">&lt;</span><span style="color:#A6ACCD;">arguments</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">length</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;">i</span><span style="color:#89DDFF;">++</span><span style="color:#F07178;">)</span><span style="color:#89DDFF;">{</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">// arguments伪数组,可以循环</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">arguments</span><span style="color:#F07178;">[</span><span style="color:#A6ACCD;">i</span><span style="color:#F07178;">])</span><span style="color:#89DDFF;">;</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">test</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">length</span><span style="color:#F07178;">) </span><span style="color:#676E95;font-style:italic;">// 获取形参长度 2</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#82AAFF;">test</span><span style="color:#A6ACCD;">(</span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">,</span><span style="color:#F78C6C;">2</span><span style="color:#A6ACCD;">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 例子</span></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">test</span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">sum</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">=</span><span style="color:#F07178;"> </span><span style="color:#F78C6C;">0</span></span>
+<span class="line"><span style="color:#89DDFF;font-style:italic;">for</span><span style="color:#F07178;">(</span><span style="color:#C792EA;">var</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">i</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">=</span><span style="color:#F07178;"> </span><span style="color:#F78C6C;">0</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;">i</span><span style="color:#89DDFF;">&lt;</span><span style="color:#A6ACCD;">arguments</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">length</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;">i</span><span style="color:#89DDFF;">++</span><span style="color:#F07178;">)</span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">sum</span><span style="color:#89DDFF;">+=</span><span style="color:#A6ACCD;">arguments</span><span style="color:#F07178;">[</span><span style="color:#A6ACCD;">i</span><span style="color:#F07178;">]</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">sum</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#82AAFF;">test</span><span style="color:#A6ACCD;">(</span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">,</span><span style="color:#F78C6C;">2</span><span style="color:#A6ACCD;">)</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 例子2</span></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">test</span><span style="color:#89DDFF;">(</span><span style="color:#A6ACCD;">a</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">b</span><span style="color:#89DDFF;">){</span></span>
+<span class="line"><span style="color:#A6ACCD;">a</span><span style="color:#89DDFF;">=</span><span style="color:#F78C6C;">100</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">// 可以修改实际参数的值</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">arguments</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">arguments</span><span style="color:#F07178;">[</span><span style="color:#F78C6C;">0</span><span style="color:#F07178;">]) </span><span style="color:#676E95;font-style:italic;">//</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#82AAFF;">test</span><span style="color:#A6ACCD;">(</span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">,</span><span style="color:#F78C6C;">2</span><span style="color:#A6ACCD;">)</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 例子3</span></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">test</span><span style="color:#89DDFF;">(</span><span style="color:#A6ACCD;">a</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">b</span><span style="color:#89DDFF;">){</span></span>
+<span class="line"><span style="color:#A6ACCD;">b</span><span style="color:#89DDFF;">=</span><span style="color:#F78C6C;">88</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">// b为undefined</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">arguments</span><span style="color:#F07178;">[</span><span style="color:#F78C6C;">1</span><span style="color:#F07178;">])</span><span style="color:#89DDFF;">;</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">// undefined</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#82AAFF;">test</span><span style="color:#A6ACCD;">(</span><span style="color:#F78C6C;">1</span><span style="color:#A6ACCD;">)</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(xxxx) </span><span style="color:#676E95;font-style:italic;">// 报错 xxxx 不存在</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">typeof</span><span style="color:#A6ACCD;">(xxx)) </span><span style="color:#676E95;font-style:italic;">// undefined</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 总结</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 传入值的可以修改，没传入的无法修改</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 函数：一个固定的功能或程序段被封装的过程。实现一个固定的功能或程序，在这个封装体中需要一个出口(返回值)和入口(参数)</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 默认值：函数参数的默认值是undefined,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">test</span><span style="color:#89DDFF;">(</span><span style="color:#A6ACCD;">a</span><span style="color:#89DDFF;">=</span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">b</span><span style="color:#89DDFF;">=</span><span style="color:#F78C6C;">3</span><span style="color:#89DDFF;">){</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">a</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">b</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#82AAFF;">test</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">,</span><span style="color:#F78C6C;">20</span><span style="color:#A6ACCD;">)</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre></div><ol start="7"><li>预编译</li></ol><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#676E95;font-style:italic;">// Ao activation Object 活跃的对象，函数上下文</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 1. 寻找行参和变量声明</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 2. 实参值赋值给行参；</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 3. 找函数声明，赋值</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 4. 执行</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 暗示全局变量</span></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> a </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">;</span></span>
+<span class="line"><span style="color:#A6ACCD;">b</span><span style="color:#89DDFF;">=</span><span style="color:#F78C6C;">2</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(window</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">b) </span><span style="color:#676E95;font-style:italic;">//a = window.a  b=window.b</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">fn</span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#C792EA;">var</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">a</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">=</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">b</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">=</span><span style="color:#F07178;"> </span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">;</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#82AAFF;">fn</span><span style="color:#A6ACCD;">()</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(a)</span><span style="color:#676E95;font-style:italic;">//报错 b为全局变量</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 例子</span></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">test</span><span style="color:#89DDFF;">(</span><span style="color:#A6ACCD;">a</span><span style="color:#89DDFF;">){</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">a</span><span style="color:#F07178;">) </span><span style="color:#676E95;font-style:italic;">// f a() {}</span></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">a</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">=</span><span style="color:#F07178;"> </span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">;</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">a</span><span style="color:#F07178;">)</span><span style="color:#89DDFF;">;</span><span style="color:#676E95;font-style:italic;">// 1</span></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#F07178;"> </span><span style="color:#82AAFF;">a</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">()</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">{}</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">a</span><span style="color:#F07178;">)</span><span style="color:#676E95;font-style:italic;">//1</span></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">b</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">=</span><span style="color:#F07178;"> </span><span style="color:#C792EA;">function</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">()</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">{</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">b</span><span style="color:#F07178;">)</span><span style="color:#676E95;font-style:italic;">// fn(){}</span></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#F07178;"> </span><span style="color:#82AAFF;">d</span><span style="color:#89DDFF;">(){}</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#82AAFF;">test</span><span style="color:#A6ACCD;">(</span><span style="color:#F78C6C;">2</span><span style="color:#A6ACCD;">)</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// Ao { // 函数区域上下问</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// a: undefined,2:fn, 1</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// b:undefiined</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//d:fn</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> a </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">;</span></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">a</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">()</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#F78C6C;">2</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(a) </span><span style="color:#676E95;font-style:italic;">// 1</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//GO { 等价于 window</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 1. 实参值赋值给行参；</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 2. 找函数声明，赋值</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 3. 执行</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">a </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">1</span></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">test</span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">a</span><span style="color:#F07178;">) </span><span style="color:#676E95;font-style:italic;">// undefined AO里有，不会往GO里找</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">a</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">=</span><span style="color:#F78C6C;">2</span><span style="color:#F07178;"> </span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">a</span><span style="color:#F07178;">) </span><span style="color:#676E95;font-style:italic;">// 2</span></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">a</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">=</span><span style="color:#F07178;"> </span><span style="color:#F78C6C;">3</span><span style="color:#F07178;"> </span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">a</span><span style="color:#F07178;">) </span><span style="color:#676E95;font-style:italic;">// 3</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#82AAFF;">test</span><span style="color:#A6ACCD;">()</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">test</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">()</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">b</span><span style="color:#F07178;">) </span><span style="color:#676E95;font-style:italic;">// undefined</span></span>
+<span class="line"><span style="color:#89DDFF;font-style:italic;">if</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">a</span><span style="color:#F07178;">)</span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#C792EA;">var</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">b</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">=</span><span style="color:#F07178;"> </span><span style="color:#F78C6C;">3</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">//会在AO里变量提升</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> a </span><span style="color:#89DDFF;">;</span></span>
+<span class="line"><span style="color:#82AAFF;">test</span><span style="color:#A6ACCD;">()</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">fn</span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;font-style:italic;">return</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">a</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">// 继续走Ao</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">a</span><span style="color:#89DDFF;">=</span><span style="color:#F78C6C;">1</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#C792EA;">function</span><span style="color:#F07178;"> </span><span style="color:#82AAFF;">a</span><span style="color:#89DDFF;">(){}</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#C792EA;">var</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">a</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">=</span><span style="color:#F07178;"> </span><span style="color:#F78C6C;">2</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#82AAFF;">fn</span><span style="color:#A6ACCD;">())</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">window</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">a </span><span style="color:#89DDFF;">||</span><span style="color:#A6ACCD;"> (window</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">a </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">1</span><span style="color:#89DDFF;">&#39;</span><span style="color:#A6ACCD;">) </span><span style="color:#676E95;font-style:italic;">// ()的优先级最高</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(window</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">a)</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 总结：</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 1. 函数声明整体提升，变量只有声明提升，赋值是不提升</span></span>
+<span class="line"></span></code></pre></div></li><li><p>作用域和作用域链</p><ol><li>函数也是一种对象类型</li></ol><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">test</span><span style="color:#89DDFF;">(){}</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(test</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">name) </span><span style="color:#676E95;font-style:italic;">// test</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(test</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">length) </span><span style="color:#676E95;font-style:italic;">// 0</span></span>
+<span class="line"></span></code></pre></div></li><li><p>闭包</p><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#676E95;font-style:italic;">// 当内部函数被返回到外部并保存时，一定会产生闭包，闭包会产生原来的作用域链不释放，过度的闭包可能会导致内存泄露或加载过慢</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 闭包</span></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">test</span><span style="color:#89DDFF;">(){</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">// 闭包可以做数据缓存</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#C792EA;">var</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">n</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">=</span><span style="color:#F07178;"> </span><span style="color:#F78C6C;">100</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#C792EA;">function</span><span style="color:#F07178;"> </span><span style="color:#82AAFF;">add</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">()</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#A6ACCD;">n</span><span style="color:#89DDFF;">++</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">n</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#C792EA;">function</span><span style="color:#F07178;"> </span><span style="color:#82AAFF;">minus</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">()</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#A6ACCD;">n</span><span style="color:#89DDFF;">--</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">n</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;font-style:italic;">return</span><span style="color:#F07178;"> [</span><span style="color:#A6ACCD;">add</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">minus</span><span style="color:#F07178;">]</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> arr </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">test</span><span style="color:#A6ACCD;">()</span></span>
+<span class="line"><span style="color:#A6ACCD;">arr[</span><span style="color:#F78C6C;">0</span><span style="color:#A6ACCD;">]() </span><span style="color:#676E95;font-style:italic;">// 101</span></span>
+<span class="line"><span style="color:#A6ACCD;">arr[</span><span style="color:#F78C6C;">1</span><span style="color:#A6ACCD;">]() </span><span style="color:#676E95;font-style:italic;">// 100</span></span>
+<span class="line"></span></code></pre></div></li><li><p>立即执行函数</p></li></ul><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 立即执行，执行完成后立即销毁, </span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// IIFE ： immediately-invoked-function-express</span></span>
+<span class="line"><span style="color:#A6ACCD;">    (</span><span style="color:#C792EA;">function</span><span style="color:#89DDFF;">(){}</span><span style="color:#A6ACCD;">)()</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// 第一种写法</span></span>
+<span class="line"><span style="color:#A6ACCD;">    (</span><span style="color:#C792EA;">function</span><span style="color:#89DDFF;">(){}</span><span style="color:#A6ACCD;">())</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// 第二种写法 W3C推荐写法</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// (function(a,b){ // 执行完之后，立即销毁</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     // var a=1,b=2;</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     console.log(a+b) // 3</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// }(3,4));</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// var sum = (function(a,b){return a+b}(4,5));</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(sum) // 9</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// function fn(){</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     console.log(22)</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// }(); // 报语法错误</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> fn </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#C792EA;">function</span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#F78C6C;">22</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">()</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// 可以执行  表达式才能被执行符号执行 ()会把什么变成表达式,会忽略函数名</span></span>
+<span class="line"><span style="color:#89DDFF;">+</span><span style="color:#A6ACCD;"> </span><span style="color:#C792EA;">function</span><span style="color:#89DDFF;">(){</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">// + - || ！ &amp;&amp;  等，让函数什么变成表达式，并且函数名会自动忽略</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">表达式</span><span style="color:#89DDFF;">&#39;</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">()</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(fn) </span><span style="color:#676E95;font-style:italic;">// undefined 执行完就销毁了</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 例子</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// function test(){</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     console.log(1)</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// }() // 报错</span></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">test</span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#F78C6C;">1</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">(</span><span style="color:#F78C6C;">5</span><span style="color:#A6ACCD;">) </span><span style="color:#676E95;font-style:italic;">// 不报错 会把函数声明看成表达式</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// ,: 也是一种运算符号</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> a </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">10</span><span style="color:#89DDFF;">;</span></span>
+<span class="line"><span style="color:#89DDFF;font-style:italic;">if</span><span style="color:#A6ACCD;">(</span><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">b</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">()</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">{}</span><span style="color:#A6ACCD;">)</span><span style="color:#89DDFF;">{</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">//(function b(){}) 会忽略b 变成表达式，忽略函数名</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">a</span><span style="color:#89DDFF;">+=typeof</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">b</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(a) </span><span style="color:#676E95;font-style:italic;">// 10undefined</span></span>
+<span class="line"></span></code></pre></div><ul><li>构造函数</li></ul><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#676E95;font-style:italic;">// 对象</span></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> teacher</span><span style="color:#89DDFF;">={</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// 1. 对象字面量</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#F07178;">name</span><span style="color:#89DDFF;">:</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">zs</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#F07178;">sex</span><span style="color:#89DDFF;">:</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">male</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#F07178;">weight</span><span style="color:#89DDFF;">:</span><span style="color:#F78C6C;">75</span><span style="color:#89DDFF;">,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#82AAFF;">teach</span><span style="color:#89DDFF;">:</span><span style="color:#C792EA;">function</span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#89DDFF;">this.</span><span style="color:#A6ACCD;">weight</span><span style="color:#89DDFF;">++</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">i can teach</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,this.</span><span style="color:#A6ACCD;">weight</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;">teacher</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">teach</span><span style="color:#A6ACCD;">() </span><span style="color:#676E95;font-style:italic;">// 76</span></span>
+<span class="line"><span style="color:#A6ACCD;">teacher</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">teach</span><span style="color:#A6ACCD;">() </span><span style="color:#676E95;font-style:italic;">// 77</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 2. 构造函数</span></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> obj </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">new</span><span style="color:#A6ACCD;"> </span><span style="color:#FFCB6B;">Object</span><span style="color:#A6ACCD;">()</span></span>
+<span class="line"><span style="color:#A6ACCD;">obj</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">name </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">ssss</span><span style="color:#89DDFF;">&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(obj)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 3. 自定义构造函数</span></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">Teacher</span><span style="color:#89DDFF;">(</span><span style="color:#A6ACCD;">options</span><span style="color:#89DDFF;">){</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">this.</span><span style="color:#A6ACCD;">name</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">=</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">options</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">name</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">||</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">zs</span><span style="color:#89DDFF;">&#39;</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">this.</span><span style="color:#82AAFF;">say</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">=</span><span style="color:#F07178;"> </span><span style="color:#C792EA;">function</span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">hello: </span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,this.</span><span style="color:#A6ACCD;">name</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> t1 </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">new</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">Teacher</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">{</span><span style="color:#F07178;">name</span><span style="color:#89DDFF;">:</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">luck</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">)</span></span>
+<span class="line"><span style="color:#A6ACCD;">t1</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">say</span><span style="color:#A6ACCD;">()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 原理</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// function Car(color){</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     this.color = color</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     // return {} [] function(){} 返回引用值会改变返回的东西，原始值不起作用</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// Car(&#39;yello&#39;)</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(window.color)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 包装类 new Number / new String / new Boolean</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// var a = 1</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// // a.name = 12 // 原始值没有自己的属性和方法</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// var b =new Number(1) // 变成数字对象</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// b.age =&#39;sss&#39; // 可以增加属性</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(b); // Number {1, age: &#39;sss&#39;}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(null.length) // 报错</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(undefined.length) // 报错</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> num </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">12</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">num</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">len </span><span style="color:#89DDFF;">=</span><span style="color:#F78C6C;">20</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// 不报错</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// new Number(num).len = 20 =&gt;delete num.len</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(num</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">len) </span><span style="color:#676E95;font-style:italic;">// undefined</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> str </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">abc</span><span style="color:#89DDFF;">&#39;</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// 经过一个包装类</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// new String(str).length</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">new</span><span style="color:#A6ACCD;"> </span><span style="color:#FFCB6B;">String</span><span style="color:#A6ACCD;">())</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(str</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">length) </span><span style="color:#676E95;font-style:italic;">// 3</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">str</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">length </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">1</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(str) </span><span style="color:#676E95;font-style:italic;">// abc 数组有截断方法，str不能截断，</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// new String(str).length =1 delete</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(str</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">length)</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// 3</span></span>
+<span class="line"></span></code></pre></div><ul><li>原型</li></ul><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#676E95;font-style:italic;">// 原型</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">Person</span><span style="color:#89DDFF;">(</span><span style="color:#A6ACCD;">name</span><span style="color:#89DDFF;">){</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">this.</span><span style="color:#A6ACCD;">name</span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;">name</span><span style="color:#89DDFF;">??</span><span style="color:#89DDFF;">&#39;&#39;</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">// 属性问题，一般写到属性上</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// var this = { // 本质</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     __proto__:Person.prototype // 默认就给装上了，__proto__ z这个可以修改</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#FFCB6B;">Person</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">prototype</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">say</span><span style="color:#89DDFF;">=</span><span style="color:#C792EA;">function</span><span style="color:#89DDFF;">(){</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">//方法一般会写到原型上</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">hello</span><span style="color:#89DDFF;">&#39;</span><span style="color:#F07178;">)</span><span style="color:#89DDFF;">;</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">Tel</span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//Person.prototype.constructor === Person</span></span>
+<span class="line"><span style="color:#FFCB6B;">Person</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">prototype</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">constructor </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> Tel </span><span style="color:#676E95;font-style:italic;">// 改变Person构造函数的原型</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#FFCB6B;">Person</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">prototype)</span><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// {constructor: ƒ}</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#FFCB6B;">Test</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">prototype</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">name</span><span style="color:#89DDFF;">=</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">lucy</span><span style="color:#89DDFF;">&#39;</span></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">Test</span><span style="color:#89DDFF;">(){}</span></span>
+<span class="line"><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> t </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">new</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">Test</span><span style="color:#A6ACCD;">()</span></span>
+<span class="line"><span style="color:#FFCB6B;">Test</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">prototype</span><span style="color:#89DDFF;">={</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#F07178;">name</span><span style="color:#89DDFF;">:</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">resolve</span><span style="color:#89DDFF;">&#39;</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// 重写，constructor实例化的时候，已经是原型的，所以重写在实例化之后不影响</span></span>
+<span class="line"><span style="color:#FFCB6B;">Test</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">prototype</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">name</span><span style="color:#89DDFF;">=</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">99</span><span style="color:#89DDFF;">&#39;</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// 给prototype赋值，会影响name属性值</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(t</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">name) </span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 1. 原型的顶端是Object.prototype  </span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 2. Object.prototype.toString()</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 3. 子集不能修改父级的原始值类型，能修改引用类型</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 4. 不是所有的对象都继承与Object.prototype, Object.create(null)</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">;</span><span style="color:#A6ACCD;">(</span><span style="color:#C792EA;">function</span><span style="color:#89DDFF;">(){</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">// 起到隔离变量的作用</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#C792EA;">function</span><span style="color:#F07178;"> </span><span style="color:#82AAFF;">Test</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">()</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">{}</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">window</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">Test</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">=</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">Test</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">)()</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">&lt;</span><span style="color:#F07178;">script</span><span style="color:#89DDFF;">&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">// undefined null 不能经过包装类，还没原型</span></span>
+<span class="line"><span style="color:#A6ACCD;">// var num = 1</span></span>
+<span class="line"><span style="color:#A6ACCD;">// var obj = </span><span style="color:#89DDFF;">{}</span></span>
+<span class="line"><span style="color:#A6ACCD;">// var obj2 = Object.create(null)</span></span>
+<span class="line"><span style="color:#A6ACCD;">// obj2.toString = function()</span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     return &#39;obj2&#39;</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// document.write(obj)</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// document.write(obj2)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 原型方法的重写</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// call /apply</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// function fn(){</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     console.log(&#39;a&#39;)</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// fn() // 等价于 fn.call() 系统默认会给个.call</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 链式调用</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// return this</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// car.key -&gt; car[&#39;key&#39;]</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// hasOwnProperty</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// var czf = {</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     age:30</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// for ... in ....; xx in obj; 能打印原型链的东西</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(&#39;age&#39; in czf)// true</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(czf.hasOwnProperty(&#39;age&#39;)) // true</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// function Car (){</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     this.name = &#39;bwo&#39;</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// var car = new Car()</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(car instanceof Car); // true instanceof会查原型链</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// var a = []</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(a.constructor) // f Array</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(a instanceof Array) // true</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Object.prototype.toString.call(a)) // [object Array]</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// callee /caller</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// function test(a,b,c){</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     // arguments.callee 返回函数本身</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     console.log(arguments.callee.length) // 3</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     console.log(test.length) // 3</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     console.log(arguments.length) // 4</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// test(2,5,4,5) </span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">const sum </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> (</span><span style="color:#C792EA;">function</span><span style="color:#89DDFF;">(</span><span style="color:#A6ACCD;">n</span><span style="color:#89DDFF;">){</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;font-style:italic;">if</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">n</span><span style="color:#89DDFF;">&lt;=</span><span style="color:#F78C6C;">1</span><span style="color:#F07178;">)</span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#89DDFF;font-style:italic;">return</span><span style="color:#F07178;"> </span><span style="color:#F78C6C;">1</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;font-style:italic;">return</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">arguments</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">callee</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">n</span><span style="color:#89DDFF;">-</span><span style="color:#F78C6C;">1</span><span style="color:#F07178;">)</span><span style="color:#89DDFF;">+</span><span style="color:#A6ACCD;">n</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">)(</span><span style="color:#F78C6C;">10</span><span style="color:#A6ACCD;">)</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(sum) </span><span style="color:#676E95;font-style:italic;">// 55 callee的运用</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// caller 返回谁调用了该函数，严格模式下会报错</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">var aa </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">{}</span></span>
+<span class="line"><span style="color:#A6ACCD;">var bb </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;">aa</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(aa </span><span style="color:#89DDFF;">==</span><span style="color:#A6ACCD;"> bb)</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">&lt;/</span><span style="color:#A6ACCD;">script</span><span style="color:#89DDFF;">&gt;</span></span>
+<span class="line"></span></code></pre></div><ul><li>严格模式</li></ul><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// 严格模式  静默失败=&gt;报错</span></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// &#39;use strict&#39;</span></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">//    var a=1 // {value: 1, writable: true, enumerable: true,configurable: false}</span></span>
+<span class="line"><span style="color:#A6ACCD;">       </span><span style="color:#C792EA;">var</span><span style="color:#A6ACCD;"> a </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">10</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// {value: 10, writable: true, enumerable: true, configurable: true}</span></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// delete window.a</span></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// console.log(a)</span></span>
+<span class="line"><span style="color:#A6ACCD;">        console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#FFCB6B;">Object</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">getOwnPropertyDescriptor</span><span style="color:#A6ACCD;">(window</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">a</span><span style="color:#89DDFF;">&#39;</span><span style="color:#A6ACCD;">))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// 变量</span></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// 1. 变量使用前必须要声明(变量使用前需要声明)</span></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// 2. 不能直接对变量操作delete(静默失败=&gt;变量报错)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// 对象</span></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// 1. 属性描述符出现不当操作的时候，会报错</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// 在严格模式下</span></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// 参数是唯一</span></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// 形参和实参映射关系不存在</span></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// 不能使用arguments.callee caller</span></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// 不允许使用 eval(有安全漏洞) with(可以改变函数在执行时候的上下文)</span></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// eval argumengts 不能 作为标识符</span></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// 不允许出现八进制</span></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// 函数默认指向undefined</span></span>
+<span class="line"></span></code></pre></div><ul><li>Es6 三大核心</li></ul><ol><li>类 Class</li><li>Promise</li></ol><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// promise</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#C792EA;">const</span><span style="color:#A6ACCD;"> promise </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">new</span><span style="color:#A6ACCD;"> </span><span style="color:#FFCB6B;">Promise</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">()</span><span style="color:#C792EA;">=&gt;</span><span style="color:#89DDFF;">{}</span><span style="color:#A6ACCD;">)</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#C792EA;">const</span><span style="color:#A6ACCD;"> promise1 </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">new</span><span style="color:#A6ACCD;">  </span><span style="color:#FFCB6B;">Promise</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">(</span><span style="color:#A6ACCD;">resolve</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">reject</span><span style="color:#89DDFF;">)</span><span style="color:#C792EA;">=&gt;</span><span style="color:#82AAFF;">resolve</span><span style="color:#A6ACCD;">(</span><span style="color:#F78C6C;">2</span><span style="color:#A6ACCD;">))</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#C792EA;">const</span><span style="color:#A6ACCD;"> promise2 </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">new</span><span style="color:#A6ACCD;">  </span><span style="color:#FFCB6B;">Promise</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">(</span><span style="color:#A6ACCD;">resolve</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">reject</span><span style="color:#89DDFF;">)</span><span style="color:#C792EA;">=&gt;</span><span style="color:#82AAFF;">reject</span><span style="color:#A6ACCD;">(</span><span style="color:#F78C6C;">2</span><span style="color:#A6ACCD;">))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">    console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(promise) </span><span style="color:#676E95;font-style:italic;">// Promise {&lt;pending&gt;}</span></span>
+<span class="line"><span style="color:#A6ACCD;">    console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(promise1) </span><span style="color:#676E95;font-style:italic;">// Promise {&lt;fulfilled&gt;: 2}</span></span>
+<span class="line"><span style="color:#A6ACCD;">    console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(promise2) </span><span style="color:#676E95;font-style:italic;">// Promise {&lt;rejected&gt;: 2}</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 基于Promise A+ 规范；</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//3种状态</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// pending (准备状态)</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// fullfilled (成功状态)</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// rejected (失败状态)</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 注意：promise状态一旦更改，就不再更改</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#C792EA;">let</span><span style="color:#A6ACCD;"> p </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">new</span><span style="color:#A6ACCD;"> </span><span style="color:#FFCB6B;">Promise</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">(</span><span style="color:#A6ACCD;">resolve</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">reject</span><span style="color:#89DDFF;">)</span><span style="color:#C792EA;">=&gt;</span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#82AAFF;">resolve</span><span style="color:#F07178;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">success</span><span style="color:#89DDFF;">&#39;</span><span style="color:#F07178;">) </span><span style="color:#676E95;font-style:italic;">// 会走成功</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#82AAFF;">reject</span><span style="color:#F07178;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">error</span><span style="color:#89DDFF;">&#39;</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">)</span></span>
+<span class="line"><span style="color:#A6ACCD;">    p</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">then</span><span style="color:#A6ACCD;">(res</span><span style="color:#C792EA;">=&gt;</span><span style="color:#89DDFF;">{</span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">res</span><span style="color:#F07178;">)</span><span style="color:#89DDFF;">},</span><span style="color:#A6ACCD;">error</span><span style="color:#C792EA;">=&gt;</span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">error</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">)</span></span>
+<span class="line"></span></code></pre></div><ol start="3"><li>模块化 Module</li></ol><h2 id="js技巧" tabindex="-1">js技巧 <a class="header-anchor" href="#js技巧" aria-hidden="true">#</a></h2><ul><li>类数组转数组</li></ul><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#C792EA;">let</span><span style="color:#A6ACCD;"> arrlike </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#F78C6C;">0</span><span style="color:#89DDFF;">:</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">name</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">:</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">age</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#F78C6C;">2</span><span style="color:#89DDFF;">:</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">job</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#F07178;">length</span><span style="color:#89DDFF;">:</span><span style="color:#F78C6C;">3</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#C792EA;">let</span><span style="color:#A6ACCD;"> str </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">helloworld</span><span style="color:#89DDFF;">&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#FFCB6B;">Array</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">from</span><span style="color:#A6ACCD;">(arrlike)) </span><span style="color:#676E95;font-style:italic;">// Es6提供的方法，只能实现浅拷贝，比较推荐使用</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#FFCB6B;">Array</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">prototype</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">slice</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">call</span><span style="color:#A6ACCD;">(arrlike))</span><span style="color:#676E95;font-style:italic;">// this指向问题，可以衍生出很多方法</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">([</span><span style="color:#89DDFF;">...</span><span style="color:#A6ACCD;">str]) </span><span style="color:#676E95;font-style:italic;">// 不适用于非迭代对象上</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 使用案例</span></span>
+<span class="line"><span style="color:#C792EA;">const</span><span style="color:#A6ACCD;"> res </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#FFCB6B;">Array</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">from</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">{</span><span style="color:#F07178;">length</span><span style="color:#89DDFF;">:</span><span style="color:#F78C6C;">10</span><span style="color:#89DDFF;">},(</span><span style="color:#A6ACCD;">item</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">index</span><span style="color:#89DDFF;">)</span><span style="color:#C792EA;">=&gt;</span><span style="color:#89DDFF;">`${</span><span style="color:#A6ACCD;">index</span><span style="color:#89DDFF;">+</span><span style="color:#A6ACCD;">Math</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">random</span><span style="color:#A6ACCD;">()</span><span style="color:#89DDFF;">}`</span><span style="color:#A6ACCD;">)</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(res)</span></span>
+<span class="line"></span></code></pre></div><ul><li>this</li></ul><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 1. 默认绑定规则</span></span>
+<span class="line"><span style="color:#A6ACCD;">    console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">global</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,this</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">===</span><span style="color:#A6ACCD;"> window) </span><span style="color:#676E95;font-style:italic;">// true</span></span>
+<span class="line"><span style="color:#89DDFF;">   </span><span style="color:#676E95;font-style:italic;">// 函数的独立调用</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">test</span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">function</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,this</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">===</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">window</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#82AAFF;">test</span><span style="color:#A6ACCD;">()  </span><span style="color:#676E95;font-style:italic;">// 等价于window.test() </span></span>
+<span class="line"></span></code></pre></div><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#676E95;font-style:italic;">// 2. 隐式绑定：谁调用就指向谁（隐式丢失，参数绑定）</span></span>
+<span class="line"><span style="color:#C792EA;">let</span><span style="color:#A6ACCD;"> a </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">0</span></span>
+<span class="line"><span style="color:#C792EA;">let</span><span style="color:#A6ACCD;"> obj </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#F07178;">a</span><span style="color:#89DDFF;">:</span><span style="color:#F78C6C;">10</span><span style="color:#89DDFF;">,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#82AAFF;">foo</span><span style="color:#89DDFF;">:</span><span style="color:#C792EA;">function</span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#89DDFF;">this</span><span style="color:#F07178;">) </span><span style="color:#676E95;font-style:italic;">// true this指向obj，因为是obj调用的</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#C792EA;">function</span><span style="color:#F07178;"> </span><span style="color:#82AAFF;">test</span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#F07178;">            </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#89DDFF;">this</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">===</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">window</span><span style="color:#F07178;">) </span><span style="color:#676E95;font-style:italic;">// window 函数的独立调用</span></span>
+<span class="line"><span style="color:#F07178;">            </span><span style="color:#C792EA;">function</span><span style="color:#F07178;"> </span><span style="color:#82AAFF;">a</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#F07178;">                </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">a</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,this</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#F07178;">            </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#F07178;">            </span><span style="color:#82AAFF;">a</span><span style="color:#F07178;">()</span><span style="color:#89DDFF;">;</span></span>
+<span class="line"><span style="color:#F07178;">            (</span><span style="color:#C792EA;">function</span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#F07178;">                </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">iife</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,this</span><span style="color:#F07178;">) </span><span style="color:#676E95;font-style:italic;">// 立即执行函数，this=&gt;window // globalThis</span></span>
+<span class="line"><span style="color:#F07178;">            </span><span style="color:#89DDFF;">}</span><span style="color:#F07178;">)()</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#82AAFF;">test</span><span style="color:#F07178;">()</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#C792EA;">function</span><span style="color:#F07178;"> </span><span style="color:#82AAFF;">c</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#F07178;">            </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">c</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,this</span><span style="color:#F07178;">) </span><span style="color:#676E95;font-style:italic;">// window</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#89DDFF;font-style:italic;">return</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">c</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">// 闭包</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;">obj</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">foo</span><span style="color:#A6ACCD;">()() </span><span style="color:#676E95;font-style:italic;">// 每个函数在执行的时候，就会有自己的this指向</span></span>
+<span class="line"><span style="color:#C792EA;">const</span><span style="color:#A6ACCD;"> fn </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> obj</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">foo </span><span style="color:#676E95;font-style:italic;">// 隐式丢失</span></span>
+<span class="line"><span style="color:#82AAFF;">fn</span><span style="color:#A6ACCD;">() </span><span style="color:#676E95;font-style:italic;">// this 指向window</span></span>
+<span class="line"></span></code></pre></div><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#676E95;font-style:italic;">// 3. 显式绑定： call apply bind</span></span>
+<span class="line"><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">foo</span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#89DDFF;">this</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#C792EA;">let</span><span style="color:#A6ACCD;"> obj </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">{}</span></span>
+<span class="line"><span style="color:#A6ACCD;">foo</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">call</span><span style="color:#A6ACCD;">(obj) </span><span style="color:#676E95;font-style:italic;">// 改变this指向</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA;">let</span><span style="color:#A6ACCD;"> arr </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> [</span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">,</span><span style="color:#F78C6C;">3</span><span style="color:#A6ACCD;">]</span></span>
+<span class="line"><span style="color:#A6ACCD;">arr</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">forEach</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">(</span><span style="color:#A6ACCD;">item</span><span style="color:#89DDFF;">)</span><span style="color:#C792EA;">=&gt;</span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#89DDFF;">this</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA;">let</span><span style="color:#A6ACCD;"> ob </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#F07178;">a</span><span style="color:#89DDFF;">:</span><span style="color:#F78C6C;">1</span></span>
+<span class="line"><span style="color:#89DDFF;">};</span></span>
+<span class="line"><span style="color:#A6ACCD;">(</span><span style="color:#C792EA;">function</span><span style="color:#89DDFF;">(){</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#89DDFF;">this</span><span style="color:#F07178;">) </span><span style="color:#676E95;font-style:italic;">// ob</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">)</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">call</span><span style="color:#A6ACCD;">(ob)</span></span>
+<span class="line"></span></code></pre></div><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#676E95;font-style:italic;">// 4. new 绑定 </span></span>
+<span class="line"><span style="color:#A6ACCD;">优先级最高</span></span>
+<span class="line"></span></code></pre></div><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#676E95;font-style:italic;">// 箭头函数中的this;</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 箭头函数中没有this,是由父级作用域决定;</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// this指向不能修改;</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 不存在arguments对象;</span></span>
+<span class="line"><span style="color:#C792EA;">const</span><span style="color:#A6ACCD;"> obj </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#F07178;">a</span><span style="color:#89DDFF;">:</span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#82AAFF;">foo</span><span style="color:#89DDFF;">:()</span><span style="color:#C792EA;">=&gt;</span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#89DDFF;">this</span><span style="color:#F07178;">) </span><span style="color:#676E95;font-style:italic;">// 外层作用域 window</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;">obj</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">foo</span><span style="color:#A6ACCD;">() </span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA;">const</span><span style="color:#A6ACCD;"> bar </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">()</span><span style="color:#C792EA;">=&gt;</span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#89DDFF;">this</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#89DDFF;">new</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">bar</span><span style="color:#A6ACCD;">() </span><span style="color:#676E95;font-style:italic;">// 报错</span></span>
+<span class="line"></span></code></pre></div><ul><li>null 和 undefined</li></ul><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#FFCB6B;">undefined</span><span style="color:#89DDFF;">:</span><span style="color:#A6ACCD;"> 原始值的初始值；为定义；</span></span>
+<span class="line"><span style="color:#FFCB6B;">null</span><span style="color:#89DDFF;">:</span><span style="color:#A6ACCD;"> 对象的原始值，空对象的引用；</span></span>
+<span class="line"></span></code></pre></div><ul><li>Es6</li></ul><ol><li>let 和 const</li></ol><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#89DDFF;">&lt;</span><span style="color:#F07178;">script</span><span style="color:#89DDFF;">&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">    // Es6</span></span>
+<span class="line"><span style="color:#A6ACCD;">    // [[scope]] 作用域 GO AO</span></span>
+<span class="line"><span style="color:#A6ACCD;">    // kiss keep it simple stuped</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">    // let 块级作用域  </span><span style="color:#89DDFF;">{}</span><span style="color:#A6ACCD;"> </span></span>
+<span class="line"><span style="color:#A6ACCD;">    // 1. if()</span><span style="color:#89DDFF;">{}</span></span>
+<span class="line"><span style="color:#A6ACCD;">    // 2. for(;1;)</span><span style="color:#89DDFF;">{}</span></span>
+<span class="line"><span style="color:#A6ACCD;">    // 3. </span><span style="color:#89DDFF;">{}</span></span>
+<span class="line"><span style="color:#A6ACCD;">    // 特征： 1.同一变量在同一个作用域中(GO,AO)，不允许重复声明;</span></span>
+<span class="line"><span style="color:#A6ACCD;">    //       2.let 不会声明提升，会产生一个暂时性死区</span></span>
+<span class="line"><span style="color:#A6ACCD;">    //       3.let 只能在当前的块级作用域下生效</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">    // const 定义必须赋值，值不能被修改，其他和let一样</span></span>
+<span class="line"><span style="color:#A6ACCD;">    // 引用类型的时候，可以把对象冻结，freeze</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">    // let const 不属于顶层对象(window)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">    const arr = [1,3]</span></span>
+<span class="line"><span style="color:#A6ACCD;">    Object.freeze(arr) // 冻结</span></span>
+<span class="line"><span style="color:#A6ACCD;">    arr.push(23)</span></span>
+<span class="line"><span style="color:#A6ACCD;">    console.log(arr)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">    // let a = 2</span></span>
+<span class="line"><span style="color:#A6ACCD;">    // // let a =1</span></span>
+<span class="line"><span style="color:#A6ACCD;">    // console.log(a) // 全局的重复声明</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">    // function fn(a)</span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     {</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//         let a = 100</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//         console.log(a) // 100 {}作用域</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     }</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     let a = 10 // 报错 函数作用域的重复声明</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     console.log(a)</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// fn()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 临时性死区</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// console.log(a) // 报错</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// let a = 10</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// var x =x </span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// console.log(x) // undefined</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// let y = y</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// console.log(y) // 报错</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// function test(x=y,y=3){</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     console.log(x,y) // y报错，暂时性死区</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// test()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// console.log(typeof a) // 报错，typeof 不再安全 </span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// let a  </span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// {</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     let a = 1 // let 只能在当前的块级作用域下生效</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// console.log(typeof a ) // undefined</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// for(let i = 0; i&lt;10;i++){</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     // let i = &#39;a&#39;</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     var i = &#39;a&#39; // 报错</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     console.log(i) // 10 个 a  和下面的等价</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// if(1){ //块级作用域潜逃</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     let a = 1</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     {</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//         let a = 10</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//         console.log(a)</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     }</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// for(var i = 0;i&lt;10;i++){</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     var i =&#39;a&#39; </span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     console.log(i) // 1个a</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 不建议在块级作用域中声明函数</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 块级作用域没返回值</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// let a = 1</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// {</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     // 函数变量提升只提升到其作用域顶部</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     function a (){</span></span>
+<span class="line"><span style="color:#A6ACCD;">            </span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     }</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// console.log(a) // 1</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">        </span><span style="color:#676E95;font-style:italic;">// var x=1</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// {</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     let x = x  // 临时性死区 TDZ</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     console.log(x) // 报错</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 默认值</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// function add(x=2,y=x){ // 默认值x=2  =&gt; let x = 2</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     console.log(x+y)</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// add()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// let x = 10</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// function fn(x){ // 报错， 相当于在作用域顶层设置 let x = undefined</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     let x =100</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     console.log(x)</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span></span>
+<span class="line"><span style="color:#A6ACCD;">    let x </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">10</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#C792EA;">function</span><span style="color:#A6ACCD;"> </span><span style="color:#82AAFF;">fn</span><span style="color:#89DDFF;">(</span><span style="color:#A6ACCD;">x</span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;">x</span><span style="color:#89DDFF;">){</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">//():有自己的作用域 Cannot access &#39;x&#39; before initialization</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">x</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#82AAFF;">fn</span><span style="color:#A6ACCD;">()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 惰性求值：每一次都会重新计算表达式的值</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">&lt;/</span><span style="color:#A6ACCD;">script</span><span style="color:#89DDFF;">&gt;</span></span>
+<span class="line"></span></code></pre></div><ol start="2"><li>解构赋值</li></ol><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#89DDFF;">&lt;</span><span style="color:#F07178;">script</span><span style="color:#89DDFF;">&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">// 解构 模式匹配(结构化赋值) 两边的结构完全相同</span></span>
+<span class="line"><span style="color:#A6ACCD;">// let [a,b,[c]] =[1,2,[6]]</span></span>
+<span class="line"><span style="color:#A6ACCD;">// console.log(a,b,c) // 1 2 6</span></span>
+<span class="line"><span style="color:#A6ACCD;">// // 解构失败(变量多了)</span></span>
+<span class="line"><span style="color:#A6ACCD;">// let [d,e,[f]] =[1,2,[]]</span></span>
+<span class="line"><span style="color:#A6ACCD;">// console.log(d,e,f) // 1,2,undefined</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">// // 不完全解构(值多了)</span></span>
+<span class="line"><span style="color:#A6ACCD;">// let [x,,[y]] =[1,2,[5]]</span></span>
+<span class="line"><span style="color:#A6ACCD;">// console.log(x,y) // 1,5</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">// // 默认值</span></span>
+<span class="line"><span style="color:#A6ACCD;">// // let [w=10,z=100+w]=[undefined]//除了undefined,都会生效</span></span>
+<span class="line"><span style="color:#A6ACCD;">// // console.log(w,z)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">// const fn=()=&gt;3</span></span>
+<span class="line"><span style="color:#A6ACCD;">// let [w=fn()]=[33] // 可以给函数</span></span>
+<span class="line"><span style="color:#A6ACCD;">// console.log(w)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">// 对象解构</span></span>
+<span class="line"><span style="color:#A6ACCD;">// let first = &#39;n&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">// let second = &#39;ame&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">// let eat = function()</span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     console.log(999)</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// let obj = {</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     first,</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     second,</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     eat,</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     [first+second]:&#39;拼接&#39;</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(obj,&#39;obj&#39;)</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// obj.eat()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// let {name,age,a:as=10}={name:1,age:&#39;age&#39;} // 对象的结构不存在顺序</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(name,age,as)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//技巧</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// let a;</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// ({a}={a:1}) // 变成表达式</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(a)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// let arr = [1,3,4],obj={};</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// [obj.a,obj.b,obj.c]=arr</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(obj)//{a: 1, b: 3, c: 4}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// let arr = [1,2,3] // 数组也是特殊的队形，也可以进行解构赋值</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// let {0:first,[arr.length-1]:last} = arr</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(first,last) // 1 3</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// ([x])=[&#39;x&#39;]// 报错 模式不匹配</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// ()</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 1. 用 let/var 声明，加（）就报错</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 交换值</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// let a = 1,b=19;</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// [a,b]=[b,a]</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(a,b) // 19 1</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 变量的解构本质是变量的赋值</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// let {a:x,a:y}={a:100} //模式匹配可以匹配同源属性（同一个源属性）</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(x,y) // 100 100</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 解构的隐式转换</span></span>
+<span class="line"><span style="color:#A6ACCD;">const [a</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">b</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">c</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">d</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">e] </span><span style="color:#89DDFF;">=</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">hello</span><span style="color:#89DDFF;">&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(a</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">b</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">c</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">d</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">e) </span><span style="color:#676E95;font-style:italic;">// h e l l o</span></span>
+<span class="line"><span style="color:#A6ACCD;">const </span><span style="color:#89DDFF;">{</span><span style="color:#F07178;">length</span><span style="color:#89DDFF;">:</span><span style="color:#A6ACCD;">len</span><span style="color:#89DDFF;">}=</span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">hello</span><span style="color:#89DDFF;">&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(len) </span><span style="color:#676E95;font-style:italic;">// 5</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">let </span><span style="color:#89DDFF;">{</span><span style="color:#F07178;">toString</span><span style="color:#89DDFF;">:</span><span style="color:#A6ACCD;">s</span><span style="color:#89DDFF;">}=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">123</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(s) </span><span style="color:#676E95;font-style:italic;">// 函数</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 布尔值，number，string都能进行隐类型转换</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// undefined null 没有对应的包装类，不能进行隐式转换</span></span>
+<span class="line"><span style="color:#89DDFF;">&lt;/</span><span style="color:#A6ACCD;">script</span><span style="color:#89DDFF;">&gt;</span></span>
+<span class="line"></span></code></pre></div><ul><li>箭头函数</li></ul><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// function test(a,b,c=1,d){</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     arguments[2]=100</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     console.log(arguments) // 给了默认值，映射关系不存在</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// test(1,3,4,5)</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// console.log(test.length) //2 函数的形参会根据给的默认值位置计算</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// function fn({x,y=10}={}){ // 兼容处理</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     console.log(x,y)</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// } </span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// fn()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 箭头函数表达式</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 箭头函数是个操作符</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 基本形式 ()=&gt;{} const f  =  a=&gt;a</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 箭头函数和解构赋值一起使用</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// const full = ({first=1,last=2}={})=&gt;first+last</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// console.log(full()) // 3</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 箭头函数的特性</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 1. 没有arguments,本质上并不是function，是胖箭头  / spread/rest 运算符  ... ,用来展开和收起</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// const add = (...args)=&gt;{ // 收集原则</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     console.log(args) // [1,3]</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// add(1,3)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// const full = (x,y,z)=&gt;{</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     console.log(x,y,z) // 1 3 4</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// full(...[1,3,4]) // 展开原则</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// full.apply(null/undefined,[])// 不改变this指向</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 2. </span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// let a = [2,3,4]</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// let b = [1,...a,5]</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// console.log(b) // [1,2,3,4,5] 可以替代Array.concate方法</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 1. 箭头函数this由最外层来决定，指向是固化的，箭头函数内部没有this，没有bind，call，apply等方法;本质上不是通过function来定义的</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 2. 不能够作为构造函数来使用</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 3. 没有arguments对象， 使用rest来替代</span></span>
+<span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// 4. yield命令不能生效，在generator函数中</span></span>
+<span class="line"></span></code></pre></div><ul><li>扩展</li></ul><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#89DDFF;">&lt;</span><span style="color:#F07178;">script</span><span style="color:#89DDFF;">&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">// 函数名的扩展</span></span>
+<span class="line"><span style="color:#A6ACCD;">// const fn = function()</span><span style="color:#89DDFF;">{}</span></span>
+<span class="line"><span style="color:#A6ACCD;">// console.log(fn.name) // fn</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">// console.log((new Function).name) // anonymous</span></span>
+<span class="line"><span style="color:#A6ACCD;">// console.log(fn.bind(</span><span style="color:#89DDFF;">{}</span><span style="color:#A6ACCD;">).name) // bound fn</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">// 对象的扩展</span></span>
+<span class="line"><span style="color:#A6ACCD;">// const foo = &#39;foo&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">// const obj = </span><span style="color:#89DDFF;">{</span><span style="color:#A6ACCD;">foo</span><span style="color:#89DDFF;">,</span><span style="color:#82AAFF;">say</span><span style="color:#A6ACCD;">()</span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     console.log(&#39;i can say&#39;)</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// }} // 属性简写和方法简写</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(obj) // {foo: &#39;foo&#39;}</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// obj.say() // i can say</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// const full = (a=1,b=12)=&gt;({a,b})</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(full())// {a: 1, b: 12}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// const obj = {}</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// const fn  = ()=&gt;({</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     // toString:()=&gt;&#39;foo&#39;</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// })</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// obj[fn()] = &#39;99&#39; // [] 内部会进行toString转换</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// obj[true] = &#39;boolean&#39;</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(obj) // {[object Object]: &#39;99&#39;, true: &#39;boolean&#39;} </span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 属性描述符</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// let obj = {</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     a:1</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// }</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(Object.getOwnPropertyDescriptor(obj,&#39;a&#39;)) // 属性描述符</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// {value: 1, writable: true, enumerable: true, configurable: true}</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// writable:可写,是否可以修改属性，但是可以删除（有bug）</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// enumerable: 可枚举, </span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// configurable: 可配置， 是否可以重新配置对象的属性, 但是可以删除（有bug）</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// value: 值</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// configurable：false 和  writable:false,  不能删除也不能修改</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// defineProperty 修改或者添加一个新的属性</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// Object.defineProperty(obj,&#39;ss&#39;,{</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     value:100,</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     enumerable:true,</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     writable:true,</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">//     configurable:true</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// })</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// console.log(obj)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// get操作  put操作</span></span>
+<span class="line"><span style="color:#A6ACCD;">const obj </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#F07178;">a</span><span style="color:#89DDFF;">:</span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#C792EA;">get</span><span style="color:#A6ACCD;"> </span><span style="color:#F07178;">name</span><span style="color:#89DDFF;">(){</span><span style="color:#F07178;"> </span><span style="color:#676E95;font-style:italic;">// get 定义的微属性</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#89DDFF;font-style:italic;">return</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">this.</span><span style="color:#A6ACCD;">_name</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">},</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#C792EA;">set</span><span style="color:#A6ACCD;"> </span><span style="color:#F07178;">name</span><span style="color:#89DDFF;">(</span><span style="color:#A6ACCD;">v</span><span style="color:#89DDFF;">){</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#89DDFF;">this.</span><span style="color:#A6ACCD;">_name</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">=</span><span style="color:#F07178;"> </span><span style="color:#A6ACCD;">v</span></span>
+<span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(obj.a) </span><span style="color:#676E95;font-style:italic;">// 1 本质：[[Get]] 默认操作，查找当前属性，没有的话查询原型属性</span></span>
+<span class="line"><span style="color:#A6ACCD;">obj.a </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">90</span><span style="color:#A6ACCD;"> </span><span style="color:#676E95;font-style:italic;">// 赋值操作 [[Put]]默认操作：</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 1. getter setter</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 2. writeable: false </span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 3. 赋值</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(obj.name) </span><span style="color:#676E95;font-style:italic;">// undefined</span></span>
+<span class="line"><span style="color:#A6ACCD;">obj.name </span><span style="color:#89DDFF;">=</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">ssss</span><span style="color:#89DDFF;">&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(obj.name) </span><span style="color:#676E95;font-style:italic;">// ssss</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/script&gt;</span></span>
+<span class="line"></span></code></pre></div><ul><li>正则表达式</li></ul><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#89DDFF;">&lt;</span><span style="color:#F07178;">script</span><span style="color:#89DDFF;">&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // 正则表达式</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // 正则：用来处理(匹配)字符串，是单独的语法体系</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // 1. 元字符</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // . [] [^] ? * + </span><span style="color:#89DDFF;">{</span><span style="color:#A6ACCD;">min</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">max</span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;"> ^ $ ()  \1\2 |</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // 转意字符: \  处理元字符</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/\+/.test(&#39;+&#39;)) // true</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/a/.test(&#39;hal&#39;)) // true</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // 2. 字符组</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // []范围；在固定范围内匹配一个，注意字符组的顺序</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/1/.test(&#39;1&#39;)) // true</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/[123456789]/.test(&#39;1489&#39;)) // true 太过繁琐</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/[1-9]/.test(&#39;1489&#39;)) //  true 必须是连续的且有顺序，ASCII</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/[1-9a-zA-Z]/.test(&#39;1aAss&#39;)) // true 优化方法</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/[^0-9]/.test(9)) // false  取反</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/[^sa]/.test(&#39;^&#39;)) // true</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // \d [0-9]  \D [^0-9]</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // \w [a-zA-Z0-9_]  \W [^a-zA-Z0-9_]</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // \s [\f\n\r\t...]  \S [^\f\n\r\t...]  非打印字符</span></span>
+<span class="line"><span style="color:#A6ACCD;">        </span></span>
+<span class="line"><span style="color:#A6ACCD;">        // 3. 量词</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // </span><span style="color:#89DDFF;">{</span><span style="color:#A6ACCD;">n</span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;"> 匹配n次  </span></span>
+<span class="line"><span style="color:#A6ACCD;">        // </span><span style="color:#89DDFF;">{</span><span style="color:#A6ACCD;">n</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">m</span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;"> 匹配最少n次，最多m次</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // </span><span style="color:#89DDFF;">{</span><span style="color:#A6ACCD;">n</span><span style="color:#89DDFF;">,}</span><span style="color:#A6ACCD;"> 最少n次，最多无限次</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // 空格是有特殊语意的，不要加空格</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // ？</span><span style="color:#89DDFF;">{</span><span style="color:#F78C6C;">0</span><span style="color:#89DDFF;">,</span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // * </span><span style="color:#89DDFF;">{</span><span style="color:#F78C6C;">0</span><span style="color:#89DDFF;">,}</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // + </span><span style="color:#89DDFF;">{</span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">,}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // 正则的贪婪模式：能多就多</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // 正则的非贪婪模式：能少就少 &quot;量词&quot;后加？</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/[0-9]</span><span style="color:#89DDFF;">{</span><span style="color:#F78C6C;">6</span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">/.test(&#39;123456&#39;)) // true</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/\d</span><span style="color:#89DDFF;">{</span><span style="color:#F78C6C;">6</span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">/.test(&#39;123456&#39;)) // true</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/\d</span><span style="color:#89DDFF;">{</span><span style="color:#F78C6C;">6</span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">/.exec(&#39;a199456&#39;)) // [&#39;199456&#39;, index: 1, input: &#39;a199456&#39;, groups: undefined]</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/\d</span><span style="color:#89DDFF;">{</span><span style="color:#F78C6C;">2</span><span style="color:#89DDFF;">,</span><span style="color:#F78C6C;">6</span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">/.exec(&#39;32445&#39;)) // 至少2，最多6， 匹配6个 [&#39;32445&#39;, index: 0, input: &#39;32445&#39;, groups: undefined]</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/\d</span><span style="color:#89DDFF;">{</span><span style="color:#F78C6C;">2</span><span style="color:#89DDFF;">,</span><span style="color:#F78C6C;">6</span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">?/.exec(&#39;32445&#39;)) // 至少2，最多6， 匹配6个 [&#39;32&#39;, index: 0, input: &#39;32445&#39;, groups: undefined]</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // 4. 分组和捕获 ()</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // 反向引用 /1/2</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/./.test(&#39;a&#39;)) // true .可以匹配“任意字符”，具体需要查看文档</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/ab</span><span style="color:#89DDFF;">{</span><span style="color:#F78C6C;">2</span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">/.test(&#39;abb&#39;)) // true</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/(ab)</span><span style="color:#89DDFF;">{</span><span style="color:#F78C6C;">2</span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">/.exec(&#39;abab&#39;)) //分组与捕获 [&#39;abab&#39;, &#39;ab&#39;, index: 0, input: &#39;abab&#39;, groups: undefined]</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/(\d</span><span style="color:#89DDFF;">{</span><span style="color:#F78C6C;">4</span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">)-(\d</span><span style="color:#89DDFF;">{</span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">,</span><span style="color:#F78C6C;">2</span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">)-(\d</span><span style="color:#89DDFF;">{</span><span style="color:#F78C6C;">1</span><span style="color:#89DDFF;">,</span><span style="color:#F78C6C;">2</span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">)/.exec(&#39;2020-09-09&#39;)) // [&#39;2020-09-09&#39;, &#39;2020&#39;, &#39;09&#39;, &#39;09&#39;, index: 0, input: &#39;2020-09-09&#39;, groups: undefined]</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // // 获取方式有局限性</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(RegExp.$1) // 2020</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(RegExp.$2) // 09</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(RegExp.$3) // 09</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        //构造函数的方式 new 的方式</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // const exp1 = new RegExp(&#39;ab</span><span style="color:#89DDFF;">{</span><span style="color:#F78C6C;">2</span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">&#39;)</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(exp1.test(&#39;abb&#39;)) // true </span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/([a-z])\1/.exec(&#39;aa&#39;)) // [&#39;aa&#39;, &#39;a&#39;, index: 0, input: &#39;aa&#39;, groups: undefined]</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/([a-z])\1/.exec(&#39;ab&#39;)) // null</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // // </span><span style="color:#89DDFF;">&lt;</span><span style="color:#F07178;">h1</span><span style="color:#89DDFF;">&gt;&lt;/</span><span style="color:#F07178;">h1</span><span style="color:#89DDFF;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/&lt;([^</span><span style="color:#89DDFF;">&lt;&gt;</span><span style="color:#A6ACCD;">]+)&gt;[/d/D]*?&lt;\/\1&gt;/.exec(&#39;</span><span style="color:#89DDFF;">&lt;</span><span style="color:#F07178;">h1</span><span style="color:#89DDFF;">&gt;&lt;/</span><span style="color:#F07178;">h1</span><span style="color:#89DDFF;">&gt;</span><span style="color:#A6ACCD;">&#39;)) // [&#39;</span><span style="color:#89DDFF;">&lt;</span><span style="color:#F07178;">h1</span><span style="color:#89DDFF;">&gt;&lt;/</span><span style="color:#F07178;">h1</span><span style="color:#89DDFF;">&gt;</span><span style="color:#A6ACCD;">&#39;, &#39;h1&#39;, index: 0, input: &#39;</span><span style="color:#89DDFF;">&lt;</span><span style="color:#F07178;">h1</span><span style="color:#89DDFF;">&gt;&lt;/</span><span style="color:#F07178;">h1</span><span style="color:#89DDFF;">&gt;</span><span style="color:#A6ACCD;">&#39;, groups: undefined]  反向引用</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/(abc)</span><span style="color:#89DDFF;">{</span><span style="color:#F78C6C;">2</span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">/.exec(&#39;abcabc&#39;)) // (2) [&#39;abcabc&#39;, &#39;abc&#39;, index: 0, input: &#39;abcabc&#39;, groups: undefined]</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/(?:abc)</span><span style="color:#89DDFF;">{</span><span style="color:#F78C6C;">2</span><span style="color:#89DDFF;">}</span><span style="color:#A6ACCD;">/.exec(&#39;abcabc&#39;)) // [&#39;abcabc&#39;, index: 0, input: &#39;abcabc&#39;, groups: undefined] 非捕获 (?:)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // 5. 选择 ｜ </span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/12|34|56/.test(&#39;34&#39;)) // true</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // 6. 断言 \b单词边界 \B 非单词边界</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/\ban\b/.test(&#39;an apple&#39;)) // true 单词边界</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/\ban\b/.test(&#39;anapple&#39;)) // false</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/^ap/.test(&#39;apple&#39;)) // true 是否以xx开始</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/le$/.test(&#39;apple&#39;)) // true 是否以xx结束</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // 环视</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/a(?=b)/.test(&#39;ab&#39;)) // true //匹配a后面是不是紧跟着b</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/a(?!b)/.test(&#39;ab&#39;)) // false //匹配a后面不是紧跟着b</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/a(?=c)/.test(&#39;ab&#39;)) // false</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/a(?!c)/.test(&#39;ab&#39;)) // true</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // 匹配方式 g: global 全局匹配</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // i: ignore case  忽略大小写</span></span>
+<span class="line"><span style="color:#A6ACCD;">        // m：: multiply 多行匹配</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">        // console.log(/a/g.exec(&#39;1a,2a,3a&#39;))</span></span>
+<span class="line"><span style="color:#A6ACCD;">        console.log(&#39;1a,2a,3a&#39;.replace(/a/,&#39;b&#39;)) // 1b,2a,3a</span></span>
+<span class="line"><span style="color:#A6ACCD;">        console.log(&#39;1a,2a,3a&#39;.replace(/a/g,&#39;b&#39;)) // 1b,2b,3b</span></span>
+<span class="line"><span style="color:#A6ACCD;">        console.log(&#39;1A,2a,3a&#39;.replace(/a/gi,&#39;b&#39;)) // 1b,2b,3b</span></span>
+<span class="line"><span style="color:#A6ACCD;">     console.log(/world$/m.test(&#39;hello world\n&#39;)) // true</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">     // 7. 优先级</span></span>
+<span class="line"><span style="color:#A6ACCD;">     console.log(/(m|f)ood/.exec(&#39;mood&#39;))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">     // 8. 网站</span></span>
+<span class="line"><span style="color:#A6ACCD;">    //  https://ihateregex.io/</span></span>
+<span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#89DDFF;">&lt;/</span><span style="color:#F07178;">script</span><span style="color:#89DDFF;">&gt;</span></span>
+<span class="line"></span></code></pre></div><h2 id="css技巧" tabindex="-1">css技巧 <a class="header-anchor" href="#css技巧" aria-hidden="true">#</a></h2><ul><li>offsetHeight,clientHeight,scrollHeight却别</li></ul><div class="language-javascript"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">&quot;</span><span style="color:#C3E88D;">offsetHeight</span><span style="color:#89DDFF;">&quot;</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">box</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">offsetHeight) </span><span style="color:#676E95;font-style:italic;">// 内容高度+padding+border</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">&quot;</span><span style="color:#C3E88D;">clientHeight</span><span style="color:#89DDFF;">&quot;</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">box</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">clientHeight) </span><span style="color:#676E95;font-style:italic;">// 内容高度+padding</span></span>
+<span class="line"><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#A6ACCD;">(</span><span style="color:#89DDFF;">&quot;</span><span style="color:#C3E88D;">scrollHeight</span><span style="color:#89DDFF;">&quot;</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">box</span><span style="color:#89DDFF;">.</span><span style="color:#A6ACCD;">scrollHeight) </span><span style="color:#676E95;font-style:italic;">// 内容实际尺寸+ padding</span></span>
+<span class="line"></span></code></pre></div><h2 id="杂谈" tabindex="-1">杂谈 <a class="header-anchor" href="#杂谈" aria-hidden="true">#</a></h2><ul><li>5大主流浏览器(有自己的内核)</li></ul><table><thead><tr><th>浏览器名称</th><th>内核</th></tr></thead><tbody><tr><td>chrome</td><td>webkit blink</td></tr><tr><td>IE</td><td>trident</td></tr><tr><td>Safari</td><td>webkit</td></tr><tr><td>FileFox</td><td>gecko</td></tr><tr><td>Opera</td><td>presto</td></tr></tbody></table><ul><li>轮流时间片 <ol><li>任务1 任务2</li><li>切分任务1 任务2</li><li>随机排列这些任务时间片段，组成队列</li><li>按照喝这个队列顺序将任务片段送进JS进程</li><li>JS线程执行一个又一个的任务片段</li></ol></li></ul></div></div></main><footer class="VPDocFooter" data-v-79ca2460 data-v-04568844><div class="edit-info" data-v-04568844><!----><!----></div><!----></footer><!--[--><!--]--></div></div></div></div></div><footer class="VPFooter" data-v-6b5fd0a9 data-v-5b331722><div class="container" data-v-5b331722><p class="message" data-v-5b331722>Released under the MIT License.</p><p class="copyright" data-v-5b331722>Copyright © 2019-present Evan You</p></div></footer><!--[--><!--]--></div></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"index.md\":\"790552a1\",\"views_flow_cicd.md\":\"d84bab89\",\"views_servers_git.md\":\"95dd3c0f\",\"views_servers_guild.md\":\"f4f25fba\",\"views_servers_linux.md\":\"88f5796d\",\"views_servers_net.md\":\"d0d56876\",\"views_servers_nginx.md\":\"78f35da6\",\"views_servers_normal.md\":\"93de3405\",\"views_servers_write.md\":\"74da3058\",\"views_tech_js_bit.md\":\"628a8b2e\",\"views_tech_js_destructur.md\":\"4fced11c\",\"views_tech_js_index.md\":\"0fae8d49\",\"views_tech_markdown_index.md\":\"d9dc1df3\",\"views_tech_node_index.md\":\"39b69292\",\"views_tech_typescript_advance.md\":\"42b89fb8\",\"views_tech_typescript_basic.md\":\"8dcbd47c\",\"views_tech_typescript_face.md\":\"77dcc24a\",\"views_tech_typescript_index.md\":\"e1617270\",\"views_tech_webpack_index.md\":\"5d36c585\",\"views_tech_webpack_loader.md\":\"44d72a2e\",\"views_tech_webpack_plugin.md\":\"df7047ff\"}")</script>
+    <script type="module" async src="/blog/assets/app.8bb00f2e.js"></script>
+    
+  </body>
+</html>

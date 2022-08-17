@@ -1,0 +1,1 @@
+import{_ as e,c as l,o as i,d as t}from"./app.8bb00f2e.js";const f=JSON.parse('{"title":"\u5783\u573E\u56DE\u6536\u673A\u5236","description":"","frontmatter":{},"headers":[],"relativePath":"views/servers/guild.md"}'),o={name:"views/servers/guild.md"},a=t("",5),r=[a];function s(_,c,d,n,u,h){return i(),l("div",null,r)}var m=e(o,[["render",s]]);export{f as __pageData,m as default};

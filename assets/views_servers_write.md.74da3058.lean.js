@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,d as l}from"./app.8bb00f2e.js";const i=JSON.parse('{"title":"\u624B\u5199\u5B9E\u73B0","description":"","frontmatter":{},"headers":[],"relativePath":"views/servers/write.md"}'),p={name:"views/servers/write.md"},o=l("",15),e=[o];function c(t,r,F,y,D,A){return a(),n("div",null,e)}var f=s(p,[["render",c]]);export{i as __pageData,f as default};
