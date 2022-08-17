@@ -631,6 +631,32 @@ console.log(aa == bb)
 
 </script>
 ```
+- 严格模式 
+```javascript
+        // 严格模式  静默失败=>报错
+        // 'use strict'
+        //    var a=1 // {value: 1, writable: true, enumerable: true,configurable: false}
+       var a = 10 // {value: 10, writable: true, enumerable: true, configurable: true}
+        // delete window.a
+        // console.log(a)
+        console.log(Object.getOwnPropertyDescriptor(window, 'a'))
+
+        // 变量
+        // 1. 变量使用前必须要声明(变量使用前需要声明)
+        // 2. 不能直接对变量操作delete(静默失败=>变量报错)
+
+        // 对象
+        // 1. 属性描述符出现不当操作的时候，会报错
+
+        // 在严格模式下
+        // 参数是唯一
+        // 形参和实参映射关系不存在
+        // 不能使用arguments.callee caller
+        // 不允许使用 eval(有安全漏洞) with(可以改变函数在执行时候的上下文)
+        // eval argumengts 不能 作为标识符
+        // 不允许出现八进制
+        // 函数默认指向undefined
+```
 - Es6 三大核心
 1. 类 Class
 2. Promise
@@ -1082,6 +1108,111 @@ console.log(obj.name) // undefined
 obj.name = 'ssss'
 console.log(obj.name) // ssss
 </script>
+```
+
+- 正则表达式
+```javascript
+    <script>
+        // 正则表达式
+        // 正则：用来处理(匹配)字符串，是单独的语法体系
+
+        // 1. 元字符
+        // . [] [^] ? * + {min,max} ^ $ ()  \1\2 |
+
+        // 转意字符: \  处理元字符
+        // console.log(/\+/.test('+')) // true
+        // console.log(/a/.test('hal')) // true
+
+        // 2. 字符组
+        // []范围；在固定范围内匹配一个，注意字符组的顺序
+        // console.log(/1/.test('1')) // true
+        // console.log(/[123456789]/.test('1489')) // true 太过繁琐
+        // console.log(/[1-9]/.test('1489')) //  true 必须是连续的且有顺序，ASCII
+        // console.log(/[1-9a-zA-Z]/.test('1aAss')) // true 优化方法
+        // console.log(/[^0-9]/.test(9)) // false  取反
+        // console.log(/[^sa]/.test('^')) // true
+        // \d [0-9]  \D [^0-9]
+        // \w [a-zA-Z0-9_]  \W [^a-zA-Z0-9_]
+        // \s [\f\n\r\t...]  \S [^\f\n\r\t...]  非打印字符
+        
+        // 3. 量词
+        // {n} 匹配n次  
+        // {n,m} 匹配最少n次，最多m次
+        // {n,} 最少n次，最多无限次
+        // 空格是有特殊语意的，不要加空格
+
+        // ？{0,1}
+        // * {0,}
+        // + {1,}
+
+        // 正则的贪婪模式：能多就多
+        // 正则的非贪婪模式：能少就少 "量词"后加？
+        // console.log(/[0-9]{6}/.test('123456')) // true
+        // console.log(/\d{6}/.test('123456')) // true
+        // console.log(/\d{6}/.exec('a199456')) // ['199456', index: 1, input: 'a199456', groups: undefined]
+
+        // console.log(/\d{2,6}/.exec('32445')) // 至少2，最多6， 匹配6个 ['32445', index: 0, input: '32445', groups: undefined]
+
+        // console.log(/\d{2,6}?/.exec('32445')) // 至少2，最多6， 匹配6个 ['32', index: 0, input: '32445', groups: undefined]
+
+        // 4. 分组和捕获 ()
+        // 反向引用 /1/2
+        // console.log(/./.test('a')) // true .可以匹配“任意字符”，具体需要查看文档
+
+        // console.log(/ab{2}/.test('abb')) // true
+        // console.log(/(ab){2}/.exec('abab')) //分组与捕获 ['abab', 'ab', index: 0, input: 'abab', groups: undefined]
+
+        // console.log(/(\d{4})-(\d{1,2})-(\d{1,2})/.exec('2020-09-09')) // ['2020-09-09', '2020', '09', '09', index: 0, input: '2020-09-09', groups: undefined]
+        // // 获取方式有局限性
+        // console.log(RegExp.$1) // 2020
+        // console.log(RegExp.$2) // 09
+        // console.log(RegExp.$3) // 09
+
+        //构造函数的方式 new 的方式
+        // const exp1 = new RegExp('ab{2}')
+        // console.log(exp1.test('abb')) // true 
+
+        // console.log(/([a-z])\1/.exec('aa')) // ['aa', 'a', index: 0, input: 'aa', groups: undefined]
+        // console.log(/([a-z])\1/.exec('ab')) // null
+        // // <h1></h1>
+
+        // console.log(/<([^<>]+)>[/d/D]*?<\/\1>/.exec('<h1></h1>')) // ['<h1></h1>', 'h1', index: 0, input: '<h1></h1>', groups: undefined]  反向引用
+
+        // console.log(/(abc){2}/.exec('abcabc')) // (2) ['abcabc', 'abc', index: 0, input: 'abcabc', groups: undefined]
+        // console.log(/(?:abc){2}/.exec('abcabc')) // ['abcabc', index: 0, input: 'abcabc', groups: undefined] 非捕获 (?:)
+
+        // 5. 选择 ｜ 
+        // console.log(/12|34|56/.test('34')) // true
+
+        // 6. 断言 \b单词边界 \B 非单词边界
+        // console.log(/\ban\b/.test('an apple')) // true 单词边界
+        // console.log(/\ban\b/.test('anapple')) // false
+
+        // console.log(/^ap/.test('apple')) // true 是否以xx开始
+        // console.log(/le$/.test('apple')) // true 是否以xx结束
+
+        // 环视
+        // console.log(/a(?=b)/.test('ab')) // true //匹配a后面是不是紧跟着b
+        // console.log(/a(?!b)/.test('ab')) // false //匹配a后面不是紧跟着b
+        // console.log(/a(?=c)/.test('ab')) // false
+        // console.log(/a(?!c)/.test('ab')) // true
+
+        // 匹配方式 g: global 全局匹配
+        // i: ignore case  忽略大小写
+        // m：: multiply 多行匹配
+
+        // console.log(/a/g.exec('1a,2a,3a'))
+        console.log('1a,2a,3a'.replace(/a/,'b')) // 1b,2a,3a
+        console.log('1a,2a,3a'.replace(/a/g,'b')) // 1b,2b,3b
+        console.log('1A,2a,3a'.replace(/a/gi,'b')) // 1b,2b,3b
+     console.log(/world$/m.test('hello world\n')) // true
+
+     // 7. 优先级
+     console.log(/(m|f)ood/.exec('mood'))
+
+     // 8. 网站
+    //  https://ihateregex.io/
+    </script>
 ```
 
 ## css技巧

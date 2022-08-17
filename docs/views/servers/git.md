@@ -25,5 +25,17 @@
 1. 其他
 ```
 1. 查看git版本： git --version  // git version 2.33.0
-2. 
+2. 创建版本库：git init
+2. 查看git状态: git status // 
+4. 修改的文件纳入缓存区中:git add .
+6. 删除版本库当中的一个特定文件：git rm --cached index.html
+5. 将暂存区中纳入版本库:git commit -m "注释"
+
+1. 查看提交历史：git log
+3. 克隆远程版本库: git clone 
+7. git help
+8. git log
+9. git diff
+10. git pull
+11. git push
 ```
